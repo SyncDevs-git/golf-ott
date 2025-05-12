@@ -24,7 +24,8 @@
       },
       colors: {
         primary: '#D5A342',
-        secondary: '#14283C'
+        secondary: '#14283C',
+        midnightBlue: '#14283C'
       },
     },
   },
