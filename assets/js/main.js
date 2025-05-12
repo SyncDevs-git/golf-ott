@@ -1,6 +1,6 @@
 $(document).ready(function () {
      /*======================= 09: Testimonial slider =========================*/
-  var swiper = new Swiper(".testimonial-slider", {
+  var swiper = new Swiper(".hero-slider", {
     loop: true,
     speed: 1500,
     autoplay: {
@@ -11,5 +11,6 @@ $(document).ready(function () {
       clickable: true,
       el: ".swiper-pagination",
     },
+
   });
 })

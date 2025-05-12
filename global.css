@@ -14,3 +14,7 @@ scrollbar-width: none;
 .sidebar-scroll::-webkit-scrollbar{
 display: none;
 }
+
+.hero-slider .swiper-pagination{
+    
+}
