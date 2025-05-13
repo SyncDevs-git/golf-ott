@@ -85,3 +85,12 @@ body {
 .category-scroll::-webkit-scrollbar {
     display: none;
 }
+
+.grab-scroll {
+  cursor: grab;
+  user-select: none;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
