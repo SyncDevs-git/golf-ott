@@ -3,18 +3,77 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     @apply bg-secondary;
 }
 
-.sidebar-scroll{
-scrollbar-width: none;
--ms-overflow-style: none;
-}
-.sidebar-scroll::-webkit-scrollbar{
-display: none;
+.sidebar-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-.hero-slider .swiper-pagination{
-    
+.sidebar-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hero-slider .swiper-pagination {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    right: 120px !important;
+    top: 50% !important;
+    width: min-content;
+    height: fit-content;
+    left: unset;
+}
+
+.swiper-pagination-bullet {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    opacity: 0.4;
+    border-radius: 50%;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* Tooltip styling */
+.swiper-pagination-bullet::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #14283C;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+}
+
+/* Tooltip pointer arrow */
+.swiper-pagination-bullet::before {
+    content: "";
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: white;
+    opacity: 0;
+}
+
+.swiper-pagination-bullet-active::after,
+.swiper-pagination-bullet-active::before {
+    opacity: 1;
 }
