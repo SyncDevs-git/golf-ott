@@ -75,3 +75,13 @@ body {
 .swiper-pagination-bullet-active::before {
     opacity: 1;
 }
+
+/* category */
+.category-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.category-scroll::-webkit-scrollbar {
+    display: none;
+}
