@@ -43,7 +43,6 @@ body {
     opacity: 1;
 }
 
-/* Tooltip styling */
 .swiper-pagination-bullet::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -61,7 +60,6 @@ body {
     opacity: 0;
 }
 
-/* Tooltip pointer arrow */
 .swiper-pagination-bullet::before {
     content: "";
     position: absolute;

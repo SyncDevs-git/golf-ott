@@ -989,8 +989,6 @@ body{
   opacity: 1;
 }
 
-/* Tooltip styling */
-
 .swiper-pagination-bullet::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -1007,8 +1005,6 @@ body{
   z-index: 10;
   opacity: 0;
 }
-
-/* Tooltip pointer arrow */
 
 .swiper-pagination-bullet::before {
   content: "";
