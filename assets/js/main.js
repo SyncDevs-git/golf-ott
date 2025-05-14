@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   // Card Slider
   var swiper2 = new Swiper(".card-slider", {
-    slidesPerView: 3,
+    slidesPerView: 3.4,
     spaceBetween: 30,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -24,17 +24,17 @@ $(document).ready(function () {
   });
   // Card Slider2
   var swiper2 = new Swiper(".card-slider2", {
-    slidesPerView: 3,
+    slidesPerView: 3.4,
     spaceBetween: 30,
   });
   // Card Slider3
   var swiper2 = new Swiper(".card-slider3", {
-    slidesPerView: 3,
+    slidesPerView: 3.4,
     spaceBetween: 30,
   });
   // Card Slider4
   var swiper2 = new Swiper(".card-slider4", {
-    slidesPerView: 3,
+    slidesPerView: 3.4,
     spaceBetween: 30,
   });
 
