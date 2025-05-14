@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  /*======================= 09: Testimonial slider =========================*/
+  /*======================= hero-slider =========================*/
   var swiper = new Swiper(".hero-slider", {
     loop: true,
     pagination: {
@@ -12,7 +12,17 @@ $(document).ready(function () {
       }
     }
   });
+  /*======================= card-slider =========================*/
+  var swiper2 = new Swiper(".card-slider", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
+  /*======================= grab-scroll =========================*/
   const slider = document.querySelector('.grab-scroll');
   let isDown = false;
   let startX;
