@@ -873,10 +873,6 @@ video {
   border-top-right-radius: 25px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .border-0{
   border-width: 0px;
 }
@@ -1064,20 +1060,12 @@ video {
   padding-top: 1.25rem;
 }
 
-.pt-\[100px\]{
-  padding-top: 100px;
-}
-
 .text-center{
   text-align: center;
 }
 
-.font-Inter{
-  font-family: Inter, sans-serif;
-}
-
-.font-Playfair-Displa{
-  font-family: Playfair Displa, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-playfair-display{
+  font-family: Playfair Display, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-\[15px\]{

@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview --host 0.0.0.0",
-    "host": "vite --host 0.0.0.0",
-    "build:css": "npx tailwindcss -i ./global.css -o ./dist/output.css --watch"
+    "preview": "vite preview",
+    "tailwind:build": "tailwindcss -i ./input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +18,9 @@
     "postcss-import": "^16.1.0",
     "tailwindcss": "^3.4.17",
     "vite": "^3.2.4"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "swiper": "^11.2.6"
   }
-  
 }
