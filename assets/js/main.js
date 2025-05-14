@@ -13,20 +13,16 @@ $(document).ready(function () {
     }
   });
   /*======================= card-slider =========================*/
-  var swiper = new Swiper(".card-slider", {
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        const slides = document.querySelectorAll('.swiper-slide');
-        const title = slides[index]?.dataset?.title || `Slide ${index + 1}`;
-        return `<span class="${className}" data-tooltip="${title}"></span>`;
-      }
-    }
+  var swiper2 = new Swiper(".card-slider", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
-   /*======================= grab-scroll =========================*/
+  /*======================= grab-scroll =========================*/
   const slider = document.querySelector('.grab-scroll');
   let isDown = false;
   let startX;

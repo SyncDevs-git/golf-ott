@@ -94,3 +94,13 @@ body {
 .grabbing {
   cursor: grabbing;
 }
+
+/* card-slider */
+.card-slider .swiper-button-disabled{
+    visibility: hidden;
+}
+
+.card-slider{}
+.card-slider{}
+.card-slider{}
+.card-slider{}
