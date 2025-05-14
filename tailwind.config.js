@@ -31,6 +31,7 @@ export default {
         midnightBlue: '#14283C',
         gray: '#aaaaaa',
         sunglow: '#FFB743',
+        goldenrod : '#D5A342',
       },
     },
   },

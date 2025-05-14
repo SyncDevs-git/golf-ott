@@ -82,16 +82,16 @@ $(document).ready(function () {
 
       // Remove active state from all buttons
       tabButtons.forEach((b) => {
-        b.classList.remove("text-white", "border-b-2", "border-[#FFB743]");
-        b.classList.add("text-gray-400");
+        b.classList.remove("active","text-white", "border-goldenrod");
+        b.classList.add("text-white/30", "border-transparent");
       });
 
       // Hide all content blocks
       tabContents.forEach((content) => content.classList.add("hidden"));
 
       // Activate clicked tab
-      btn.classList.remove("text-gray-400");
-      btn.classList.add("text-white", "border-b-2", "border-[#FFB743]");
+      btn.classList.remove("text-white/30", "border-transparent");
+      btn.classList.add("text-white", "border-goldenrod");
       document.getElementById(target).classList.remove("hidden");
     });
   });
