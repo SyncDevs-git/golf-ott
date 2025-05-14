@@ -1,8 +1,11 @@
- /** @type {import('tailwindcss').Config} */
- const defaultTheme = require("tailwindcss/defaultTheme");
+/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 
- export default {
-  content: ["*", "./pages/*html", "./src/**/*.{js,jsx}","./assets/**/*.{js,jsx}"],
+export default {
+  content: ["./index.html",
+    "./pages/**/*.html",
+    "./src/**/*.{js,jsx}",
+    "./assets/**/*.{js,jsx}"],
   theme: {
     container: {
       center: true,
@@ -19,8 +22,8 @@
     },
     extend: {
       fontFamily: {
-        "Playfair-Displa": ["Playfair Displa", ...defaultTheme.fontFamily.sans],
-        "Inter": ["Inter", "sans-serif"],
+        "playfair-display": ["Playfair Display", ...defaultTheme.fontFamily.sans],
+        "inter": ["Inter", "sans-serif"],
       },
       colors: {
         primary: '#D5A342',

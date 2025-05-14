@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  /*======================= hero-slider =========================*/
+  // Hero Slider
   var swiper = new Swiper(".hero-slider", {
     loop: true,
     pagination: {
@@ -12,7 +12,8 @@ $(document).ready(function () {
       }
     }
   });
-  /*======================= card-slider =========================*/
+
+  // Card Slider
   var swiper2 = new Swiper(".card-slider", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -22,34 +23,36 @@ $(document).ready(function () {
     },
   });
 
-  /*======================= grab-scroll =========================*/
+  // Grab Scroll
   const slider = document.querySelector('.grab-scroll');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
+  if (slider) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('grabbing');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('grabbing');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
 
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('grabbing');
-  });
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('grabbing');
+    });
 
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('grabbing');
-  });
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('grabbing');
+    });
 
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2; // scroll speed
-    slider.scrollLeft = scrollLeft - walk;
-  });
-})
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  }
+});
