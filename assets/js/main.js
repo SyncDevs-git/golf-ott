@@ -22,6 +22,21 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+  // Card Slider2
+  var swiper2 = new Swiper(".card-slider2", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+  });
+  // Card Slider3
+  var swiper2 = new Swiper(".card-slider3", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+  });
+  // Card Slider4
+  var swiper2 = new Swiper(".card-slider4", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+  });
 
   // Grab Scroll
   const slider = document.querySelector('.grab-scroll');
