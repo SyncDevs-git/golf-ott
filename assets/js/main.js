@@ -70,4 +70,29 @@ $(document).ready(function () {
       slider.scrollLeft = scrollLeft - walk;
     });
   }
+
+
+
+   const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content-block");
+
+  tabButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const target = btn.getAttribute("data-tab");
+
+      // Remove active state from all buttons
+      tabButtons.forEach((b) => {
+        b.classList.remove("active","text-white", "border-goldenrod");
+        b.classList.add("text-white/30", "border-transparent");
+      });
+
+      // Hide all content blocks
+      tabContents.forEach((content) => content.classList.add("hidden"));
+
+      // Activate clicked tab
+      btn.classList.remove("text-white/30", "border-transparent");
+      btn.classList.add("text-white", "border-goldenrod");
+      document.getElementById(target).classList.remove("hidden");
+    });
+  });
 });
