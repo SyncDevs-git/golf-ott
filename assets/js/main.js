@@ -28,12 +28,12 @@ $(document).ready(function () {
     spaceBetween: 30,
   });
   // Card Slider3
-  var swiper2 = new Swiper(".card-slider3", {
+  var swiper3 = new Swiper(".card-slider3", {
     slidesPerView: 3.4,
     spaceBetween: 30,
   });
   // Card Slider4
-  var swiper2 = new Swiper(".card-slider4", {
+  var swiper4 = new Swiper(".card-slider4", {
     slidesPerView: 3.4,
     spaceBetween: 30,
   });
@@ -73,7 +73,7 @@ $(document).ready(function () {
 
 
 
-   const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabButtons = document.querySelectorAll(".tab-btn");
   const tabContents = document.querySelectorAll(".tab-content-block");
 
   tabButtons.forEach((btn) => {
@@ -82,7 +82,7 @@ $(document).ready(function () {
 
       // Remove active state from all buttons
       tabButtons.forEach((b) => {
-        b.classList.remove("active","text-white", "border-goldenrod");
+        b.classList.remove("active", "text-white", "border-primary");
         b.classList.add("text-white/30", "border-transparent");
       });
 
@@ -91,8 +91,9 @@ $(document).ready(function () {
 
       // Activate clicked tab
       btn.classList.remove("text-white/30", "border-transparent");
-      btn.classList.add("text-white", "border-goldenrod");
+      btn.classList.add("text-white", "border-primary");
       document.getElementById(target).classList.remove("hidden");
     });
   });
+
 });
