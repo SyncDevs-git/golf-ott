@@ -21,6 +21,20 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        320: {
+          slidesPerView: 2.4,
+          spaceBetween: 20,
+        },
+        600: {
+          slidesPerView: 2.4,
+          spaceBetween: 40,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
   });
   // Card Slider2
   var swiper2 = new Swiper(".card-slider2", {
