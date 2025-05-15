@@ -1318,6 +1318,11 @@ video {
   padding-bottom: 19px;
 }
 
+.py-\[20px\]{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .py-\[21px\]{
   padding-top: 21px;
   padding-bottom: 21px;
@@ -1556,6 +1561,10 @@ video {
   opacity: 0;
 }
 
+.opacity-40{
+  opacity: 0.4;
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1789,6 +1798,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:opacity-100:hover{
+  opacity: 1;
+}
+
 .group:hover .group-hover\:w-auto{
   width: auto;
 }
@@ -1799,6 +1812,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .group:hover .group-hover\:gap-\[17px\]{
   gap: 17px;
+}
+
+.group:hover .group-hover\:divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.group:hover .group-hover\:divide-dashed > :not([hidden]) ~ :not([hidden]){
+  border-style: dashed;
 }
 
 .group:hover .group-hover\:text-left{
@@ -1814,11 +1837,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 1;
 }
 
-.peer:checked ~ .peer-checked\:border-primary{
-  --tw-border-opacity: 1;
-  border-color: rgb(213 163 66 / var(--tw-border-opacity, 1));
-}
-
 .peer\/email:checked ~ .peer-checked\/email\:border-primary{
   --tw-border-opacity: 1;
   border-color: rgb(213 163 66 / var(--tw-border-opacity, 1));
@@ -1829,9 +1847,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-color: rgb(213 163 66 / var(--tw-border-opacity, 1));
 }
 
-.peer:checked ~ .peer-checked\:bg-primary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(213 163 66 / var(--tw-bg-opacity, 1));
+.peer:checked ~ .peer-checked\:border-primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(213 163 66 / var(--tw-border-opacity, 1));
 }
 
 .peer\/email:checked ~ .peer-checked\/email\:bg-primary{
@@ -1844,6 +1862,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: rgb(213 163 66 / var(--tw-bg-opacity, 1));
 }
 
-.peer:checked ~ .peer-checked\:opacity-100{
-  opacity: 1;
+.peer:checked ~ .peer-checked\:bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 163 66 / var(--tw-bg-opacity, 1));
 }
