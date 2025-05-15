@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./../assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./../assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./../assets/images/favicon-16x16.png" />
+    <link rel="manifest" href="./../assets/images/site.webmanifest" />
+
+    <!-- title -->
+    <title>Golf - OTT | Home</title>
+    <!-- swiper-slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- output css -->
+    <link rel="stylesheet" href="./../dist/output.css" />
+</head>
+
+<body>
+    <div
+        class="group sidebar transition-all duration-300 ease-in-out hover:w-[323px] w-[113px] h-screen overflow-hidden fixed top-0 z-10">
+        <div
+            class="sidebar-scroll bg-white/15 backdrop-blur-[33px] w-full h-full pb-32 overflow-y-auto overflow-x-hidden">
+            <div class="logo px-[27px] py-[21px]">
+                <img src="./../assets/images/logo.png" alt="" />
+            </div>
+            <div
+                class="search border-t-[2px] border-b-[2px] border-white/[13%] px-[27px] py-[14px] text-center group-hover:text-left transition-all duration-300 ease-in-out">
+                <span
+                    class="inline-flex items-center justify-center group-hover:gap-[17px] transition-all duration-300 ease-in-out">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.2083 21.5417C9.1646 21.5417 7.16675 20.9356 5.46745 19.8002C3.76814 18.6647 2.44369 17.0509 1.66158 15.1627C0.879477 13.2746 0.674843 11.1969 1.07356 9.1924C1.47227 7.18793 2.45643 5.3467 3.90157 3.90156C5.34671 2.45642 7.18793 1.47226 9.1924 1.07355C11.1969 0.674835 13.2746 0.87947 15.1627 1.66158C17.0509 2.44368 18.6647 3.76813 19.8002 5.46744C20.9356 7.16675 21.5417 9.16459 21.5417 11.2083C21.5386 13.948 20.4489 16.5745 18.5117 18.5117C16.5745 20.4489 13.948 21.5386 11.2083 21.5417ZM11.2083 3.45833C9.67553 3.45833 8.17715 3.91286 6.90267 4.76444C5.62819 5.61602 4.63485 6.82641 4.04827 8.24253C3.46169 9.65866 3.30822 11.2169 3.60725 12.7203C3.90629 14.2236 4.6444 15.6046 5.72826 16.6884C6.81212 17.7723 8.19304 18.5104 9.69639 18.8094C11.1997 19.1085 12.758 18.955 14.1741 18.3684C15.5903 17.7818 16.8006 16.7885 17.6522 15.514C18.5038 14.2395 18.9583 12.7411 18.9583 11.2083C18.9563 9.15353 18.1391 7.18348 16.6861 5.73052C15.2332 4.27756 13.2631 3.46038 11.2083 3.45833Z"
+                            fill="white" />
+                        <path
+                            d="M22.8333 24.125C22.4908 24.1249 22.1623 23.9888 21.9201 23.7465L16.7535 18.5799C16.5182 18.3363 16.388 18.01 16.3909 17.6713C16.3939 17.3326 16.5297 17.0087 16.7692 16.7692C17.0087 16.5297 17.3326 16.3939 17.6713 16.3909C18.01 16.388 18.3363 16.5182 18.5799 16.7535L23.7465 21.9201C23.9271 22.1008 24.0501 22.3309 24.0999 22.5814C24.1497 22.8319 24.1242 23.0916 24.0264 23.3276C23.9287 23.5636 23.7632 23.7653 23.5508 23.9072C23.3384 24.0492 23.0888 24.1249 22.8333 24.125Z"
+                            fill="white" />
+                    </svg>
+                    <input
+                        class="opacity-0 group-hover:opacity-100 w-0 group-hover:w-full duration-200 bg-transparent border-0 outline-0 placeholder:text-white"
+                        type="search" name="search" id="" placeholder="Search..." />
+                </span>
+            </div>
+            <ul class="divide-y divide-dashed divide-white/30 px-[27px]">
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-1.png" alt="" />
+                        <span class="flex items-center justify-between w-full">
+                            <p
+                                class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-primary">
+                                Golf Channels
+                            </p>
+                            <svg class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary"
+                                width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.88532 15.9375C5.31687 15.937 5.73061 15.7654 6.03577 15.4602C6.34092 15.155 6.51258 14.7413 6.51307 14.3098V2.69025C6.51307 1.7927 5.78287 1.0625 4.88532 1.0625C3.98777 1.0625 3.25757 1.7927 3.25757 2.69025V14.3098C3.25806 14.7413 3.42971 15.155 3.73487 15.4602C4.04002 15.7654 4.45376 15.937 4.88532 15.9375ZM13.7426 14.3098V2.69025C13.7426 1.7927 13.0124 1.0625 12.1148 1.0625C11.2173 1.0625 10.4871 1.7927 10.4871 2.69025V14.3098C10.4876 14.7413 10.6592 15.155 10.9644 15.4602C11.2695 15.7654 11.6833 15.937 12.1148 15.9375C12.5464 15.937 12.9601 15.7654 13.2653 15.4602C13.5704 15.155 13.7421 14.7413 13.7426 14.3098Z"
+                                    fill="#D5A342" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-2.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-3.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Fairway TV
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-4.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            TeeView
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-5.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Golf Network
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-6.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Greenside Picks
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-7.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            SwingZone
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-8.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Pro Circles
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-9.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Tee Time Channels
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-10.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[21px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="./../assets/images/channel-11.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div
+            class="settings divide-y divide-dashed divide-white/30 px-[27px] bg-white/10 backdrop-blur-[50px] sticky bottom-0 rounded-t-[25px] text-center flex flex-col">
+            <a href="#" class="inline-flex items-center justify-center group-hover:gap-[17px] py-[21px]">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.3708 12.8013L18.4405 11.2919C18.465 11.0591 18.486 10.787 18.486 10.4991C18.486 10.2113 18.4659 9.93915 18.4405 9.70639L20.3725 8.19615C20.7313 7.91265 20.8293 7.40951 20.6009 6.99042L18.5937 3.5175C18.3793 3.12551 17.9094 2.92425 17.4325 3.10013L15.1549 4.01449C14.7183 3.69949 14.2606 3.4335 13.7873 3.22088L13.4408 0.805014C13.3839 0.3465 12.9849 0 12.5133 0H8.48831C8.01667 0 7.61857 0.3465 7.56254 0.798L7.21518 3.22264C6.75667 3.42915 6.30607 3.69165 5.85018 4.01625L3.56643 3.09926C3.13852 2.93389 2.62664 3.11936 2.41402 3.50962L0.404169 6.98689C0.167057 7.38765 0.265044 7.90826 0.631682 8.19878L2.56192 9.70815C2.53128 10.003 2.51643 10.2594 2.51643 10.5C2.51643 10.7407 2.53132 10.997 2.56192 11.2928L0.629919 12.803C0.271155 13.0874 0.17403 13.5905 0.402405 14.0088L2.40967 17.4816C2.62406 17.8728 3.08954 18.0758 3.57078 17.899L5.84842 16.9847C6.28417 17.2988 6.74178 17.5648 7.21518 17.7783L7.56168 20.1933C7.61853 20.6535 8.01667 21 8.48917 21H12.5142C12.9858 21 13.3848 20.6535 13.4408 20.202L13.7881 17.7783C14.2467 17.5709 14.6964 17.3092 15.1531 16.9837L17.4369 17.9007C17.5462 17.9435 17.6625 17.9655 17.7799 17.9655C18.1194 17.9655 18.4318 17.78 18.5893 17.4912L20.6053 14C20.8293 13.5905 20.7313 13.0874 20.3708 12.8013ZM10.5008 14C8.57054 14 7.00079 12.4302 7.00079 10.5C7.00079 8.56976 8.57054 7.00001 10.5008 7.00001C12.431 7.00001 14.0008 8.56976 14.0008 10.5C14.0008 12.4302 12.431 14 10.5008 14Z"
+                        fill="white" />
+                </svg>
+                <p
+                    class="opacity-0 group-hover:opacity-100 duration-200 w-0 group-hover:w-auto font-Inter font-semibold text-[15px] leading-[130%] text-white">
+                    Settings
+                </p>
+            </a>
+            <a href="#" class="inline-flex items-center justify-center group-hover:gap-[17px] py-[21px]">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.5337 10.1478C11.8076 10.1478 12.9107 9.69083 13.812 8.78936C14.7133 7.88807 15.1702 6.78527 15.1702 5.51124C15.1702 4.2376 14.7133 3.13468 13.8118 2.23305C12.9104 1.33188 11.8074 0.875 10.5337 0.875C9.25962 0.875 8.15678 1.33188 7.25549 2.2332C6.35421 3.13453 5.89714 4.23748 5.89714 5.51124C5.89714 6.78527 6.35417 7.88822 7.25564 8.78955C8.15712 9.69072 9.26007 10.1478 10.5337 10.1478ZM18.6463 15.6772C18.6203 15.3021 18.5677 14.8929 18.4903 14.4609C18.4122 14.0255 18.3116 13.614 18.1912 13.2379C18.0668 12.8492 17.8976 12.4653 17.6885 12.0974C17.4714 11.7155 17.2165 11.383 16.9303 11.1094C16.6312 10.8232 16.2649 10.5931 15.8413 10.4251C15.4193 10.2582 14.9515 10.1736 14.4511 10.1736C14.2546 10.1736 14.0646 10.2542 13.6976 10.4932C13.4367 10.6631 13.175 10.8318 12.9126 10.9993C12.6604 11.1599 12.3188 11.3105 11.8969 11.4468C11.4852 11.58 11.0672 11.6475 10.6547 11.6475C10.2422 11.6475 9.8243 11.58 9.41219 11.4468C8.99072 11.3106 8.64912 11.1601 8.39721 10.9994C8.10508 10.8127 7.84077 10.6424 7.6115 10.493C7.24493 10.2541 7.05472 10.1734 6.85824 10.1734C6.35771 10.1734 5.89011 10.2582 5.46815 10.4253C5.04488 10.5929 4.67846 10.823 4.379 11.1096C4.09307 11.3833 3.83797 11.7156 3.62118 12.0974C3.41222 12.4653 3.24303 12.849 3.11847 13.2381C2.99816 13.6142 2.89758 14.0255 2.81946 14.4609C2.74204 14.8924 2.68948 15.3017 2.66347 15.6776C2.63758 16.056 2.62476 16.4351 2.625 16.8144C2.625 17.8192 2.94443 18.6327 3.57434 19.2326C4.19646 19.8247 5.01962 20.125 6.02065 20.125H15.2896C16.2906 20.125 17.1135 19.8248 17.7358 19.2327C18.3658 18.6331 18.6852 17.8195 18.6852 16.8142C18.6851 16.4264 18.672 16.0438 18.6463 15.6772Z"
+                        fill="white" />
+                </svg>
+                <p
+                    class="opacity-0 group-hover:opacity-100 duration-200 w-0 group-hover:w-auto font-Inter font-semibold text-[15px] leading-[130%] text-white">
+                    Login
+                </p>
+            </a>
+        </div>
+    </div>
+
+    <div class="settings bg-gradient-to-t from-white/20 to-white/0 min-h-screen flex items-center justify-center">
+        <div class="max-w-[768px] rounded-[20px] bg-white/10 w-full">
+            <div class="flex items-center justify-between px-[35px] py-[28px] border-b border-white/15">
+                <h5 class="font-inter font-extrabold text-[22px] leading-[100%] text-white">Settings</h5>
+                <button
+                    class="bg-goldenrod rounded-[11px] py-[11.5px] px-[30px] font-inter font-semibold text-base leading-[123%] text-black">Save</button>
+            </div>
+            <div class="grid grid-cols-12">
+                <div class="col-span-4 border-r border-white/15">
+                    <div class="flex flex-col gap-8 py-[39px]">
+                        <a href="#"
+                            class="text-white font-inter text-lg leading-[123%] border-l-2 border-goldenrod px-[35px]">My
+                            Profile</a>
+                        <a href="#"
+                            class="text-white/30 font-inter font-medium text-lg leading-[123%] hover:text-white border-l-2 border-transparent px-[35px]">Change
+                            Password</a>
+                        <a href="#"
+                            class="text-white/30 font-inter font-medium text-lg leading-[123%] hover:text-white border-l-2 border-transparent px-[35px]">Playback
+                            Settings</a>
+                        <a href="#"
+                            class="text-white/30 font-inter font-medium text-lg leading-[123%] hover:text-white border-l-2 border-transparent px-[35px]">Notification
+                            Settings</a>
+                    </div>
+                    <div class="border-t border-white/15">
+                        <a href="#">Need Help?</a>
+                    </div>
+                </div>
+                <div class="col-span-8">
+                    <form class="grid grid-cols-12 gap-[30px] p-[36px]">
+                        <div class="col-span-12">
+                            <label class="block font-inter font-semibold text-base leading-[100%] text-white mb-[14px]" for="name">Name</label>
+                            <input class="block py-[19px] px-[25px] font-inter font-normal text-base leading-[100%] text-white w-full rounded-[13px] bg-white/20 border-0 outline-none" type="text" name="name" id="name" placeholder="Willam Bose">
+                        </div>
+                        <div class="col-span-12">
+                            <label class="block font-inter font-semibold text-base leading-[100%] text-white mb-[14px]" for="name">Email</label>
+                            <input class="block py-[19px] px-[25px] font-inter font-normal text-base leading-[100%] text-white w-full rounded-[13px] bg-white/20 border-0 outline-none" type="email" name="name" id="name" placeholder="email@provider.com">
+                        </div>
+                        <div class="col-span-12">
+                            <label class="block font-inter font-semibold text-base leading-[100%] text-white mb-[14px]" for="dob">Date of Birth</label>
+                            <input class="block py-[19px] px-[25px] font-inter font-normal text-base leading-[100%] text-white w-full rounded-[13px] bg-white/20" type="date" name="dob" id="dob" placeholder="Willam Bose">
+                        </div>
+                        <div class="col-span-12">
+                            <label class="block font-inter font-semibold text-base leading-[100%] text-white mb-[14px]" for="country">Country</label>
+                            <select class="block py-[19px] px-[25px] font-inter font-normal text-base leading-[100%] text-white w-full rounded-[13px] bg-white/20 appearance-none" name="" id="">
+                                <option value="" disabled selected>Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="MX">Mexico</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="DE">Germany</option>
+                                <option value="FR">France</option>
+                                <option value="IT">Italy</option>
+                                <option value="ES">Spain</option>
+                                <option value="CN">China</option>
+                                <option value="JP">Japan</option>
+                                <option value="IN">India</option>
+                                <option value="BR">Brazil</option>
+                                <option value="AU">Australia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SA">Saudi Arabia</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- swiper-slider js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+
+</html>
