@@ -1241,6 +1241,14 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-video-bg{
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bg-gradient-bg-white-soft{
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 .from-midnightBlue{
   --tw-gradient-from: #14283C var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(20 40 60 / 0) var(--tw-gradient-to-position);
@@ -2120,6 +2128,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .max-md\:pt-\[97px\]{
     padding-top: 97px;
+  }
+
+  .max-md\:pt-\[50px\]{
+    padding-top: 50px;
   }
 
   .max-md\:text-\[13px\]{
