@@ -22,6 +22,7 @@ body {
   gap: 20px;
   right: 120px !important;
   top: 50% !important;
+  transform: translateY(-50%);
   width: min-content;
   height: fit-content;
   left: unset;
@@ -50,24 +51,15 @@ body {
 
 .swiper-pagination-bullet::after {
   content: attr(data-tooltip);
+  max-width: 420px;
+  width: max-content;
   position: absolute;
   right: 21px;
   top: 50%;
   transform: translateY(-50%);
   background-color: white;
   color: #14283C;
-  padding: 6px 12px;
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 100%;
-  border-radius: 6px;
-  white-space: nowrap;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+  @apply bg-white text-midnightBlue font-playfair-display font-extrabold text-xl text-left rounded-xl py-[15px] px-[20px] z-10 opacity-0 pointer-events-none transition-opacity duration-300 ease-linear shadow-[0_4px_10px_rgba(0,0,0,0.1)];
 }
 
 .swiper-pagination-bullet::before {
@@ -83,10 +75,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* .swiper-pagination-bullet-active::after,
-.swiper-pagination-bullet-active::before {
-    opacity: 1;
-} */
 .swiper-pagination-bullet:hover::after,
 .swiper-pagination-bullet:hover::before {
   opacity: 1;

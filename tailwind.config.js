@@ -65,6 +65,22 @@ export default {
         gray: '#aaaaaa',
         sunglow: '#FFB743',
       },
+      backgroundImage: {
+        // Bottom to top
+        'gradient-bt-dark': 'linear-gradient(0deg, #14283C 0%, rgba(20, 40, 60, 0) 100%)',
+
+        // Left to right (diagonal)
+        'gradient-diagonal-dark': 'linear-gradient(45deg, #14283C 0%, rgba(20, 40, 60, 0) 100%)',
+
+        // Background (white overlay fading up)
+        'gradient-bg-white-soft': 'linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%)',
+
+        // Video play page bg (same as above)
+        'gradient-video-bg': 'linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%)',
+
+        // Reverse white fade (bottom transparent to top white overlay)
+        'gradient-reverse-white': 'linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 100%)',
+      },
     },
   },
   plugins: [],
