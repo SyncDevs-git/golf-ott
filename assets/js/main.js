@@ -23,12 +23,12 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 2.4,
-        spaceBetween: 20,
+        slidesPerView: 1.4,
+        spaceBetween: 17,
       },
       600: {
-        slidesPerView: 2.4,
-        spaceBetween: 40,
+        slidesPerView: 1.4,
+       spaceBetween: 17,
       },
       992: {
         slidesPerView: 3,
@@ -40,16 +40,58 @@ $(document).ready(function () {
   var swiper2 = new Swiper(".card-slider2", {
     slidesPerView: 3.4,
     spaceBetween: 30,
+      breakpoints: {
+      320: {
+        slidesPerView: 1.4,
+        spaceBetween: 17,
+      },
+      600: {
+        slidesPerView: 1.4,
+       spaceBetween: 17,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
   });
   // Card Slider3
   var swiper3 = new Swiper(".card-slider3", {
     slidesPerView: 3.4,
     spaceBetween: 30,
+      breakpoints: {
+      320: {
+        slidesPerView: 1.4,
+        spaceBetween: 17,
+      },
+      600: {
+        slidesPerView: 1.4,
+       spaceBetween: 17,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
   });
   // Card Slider4
   var swiper4 = new Swiper(".card-slider4", {
     slidesPerView: 3.4,
     spaceBetween: 30,
+      breakpoints: {
+      320: {
+        slidesPerView: 1.4,
+        spaceBetween: 17,
+      },
+      600: {
+        slidesPerView: 1.4,
+       spaceBetween: 17,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
   });
 
   // Grab Scroll
