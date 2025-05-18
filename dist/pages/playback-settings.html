@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- output css -->
      
-  <script type="module" crossorigin src="/assets/main.8b37e59f.js"></script>
-  <link rel="stylesheet" href="/assets/main.9d27c619.css">
+  <script type="module" crossorigin src="/assets/main.147ecf3c.js"></script>
+  <link rel="stylesheet" href="/assets/main.4432dfb7.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             </div>
             <div
                 class="search border-t-[2px] border-b-[2px] border-white/[13%] px-[27px] py-[14px] text-center group-hover:text-left transition-all duration-300 ease-in-out">
-                <span
+               <a href="/pages/search.html"
                     class="inline-flex items-center justify-center group-hover:gap-[17px] transition-all duration-300 ease-in-out">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -39,10 +39,8 @@
                             d="M22.8333 24.125C22.4908 24.1249 22.1623 23.9888 21.9201 23.7465L16.7535 18.5799C16.5182 18.3363 16.388 18.01 16.3909 17.6713C16.3939 17.3326 16.5297 17.0087 16.7692 16.7692C17.0087 16.5297 17.3326 16.3939 17.6713 16.3909C18.01 16.388 18.3363 16.5182 18.5799 16.7535L23.7465 21.9201C23.9271 22.1008 24.0501 22.3309 24.0999 22.5814C24.1497 22.8319 24.1242 23.0916 24.0264 23.3276C23.9287 23.5636 23.7632 23.7653 23.5508 23.9072C23.3384 24.0492 23.0888 24.1249 22.8333 24.125Z"
                             fill="white" />
                     </svg>
-                    <input
-                        class="opacity-0 group-hover:opacity-100 w-0 group-hover:w-full duration-200 bg-transparent border-0 outline-0 placeholder:text-white"
-                        type="search" name="search" id="" placeholder="Search..." />
-                </span>
+                    <p class="opacity-0 group-hover:opacity-100 w-0 group-hover:w-full duration-200 text-white">Search...</p>
+                </a>
             </div>
            <ul class="group-hover:divide-y group-hover:divide-dashed divide-white/30 px-[27px]">
                 <li class="py-[20px]">
@@ -193,16 +191,16 @@
                 <div class="grid grid-cols-12">
                     <div class="col-span-4 border-r border-white/15 flex flex-col justify-between">
                         <div class="flex flex-col gap-8 py-[39px]">
-                            <a href="#"
+                            <a href="./my-profile-settings.html"
                                 class="text-white/30 hover:text-white font-inter text-lg leading-[123%] border-l-2 border-transparent px-[35px]">My
                                 Profile</a>
-                            <a href="#"
+                            <a href="./change-password-settings.html"
                                 class="text-white/30 font-inter font-medium text-lg leading-[123%] hover:text-white border-l-2 border-transparent px-[35px]">Change
                                 Password</a>
-                            <a href="#"
-                                class="text-white font-inter font-medium text-lg leading-[123%] hover:text-white border-l-2 border-primary px-[35px]">Playback
+                            <a href="./playback-settings.html"
+                                class="text-white font-inter font-medium text-lg leading-[123%] border-l-2 border-primary px-[35px]">Playback
                                 Settings</a>
-                            <a href="#"
+                            <a href="./notification-settings.html"
                                 class="text-white/30 font-inter font-medium text-lg leading-[123%] hover:text-white border-l-2 border-transparent px-[35px]">Notification
                                 Settings</a>
                         </div>
@@ -253,7 +251,7 @@
                                         <!-- Custom checkbox appearance -->
                                         <div
                                             class="w-5 h-5 rounded-[4px] bg-white/20 border border-white/30 peer-checked:bg-primary peer-checked:border-primary transition-colors duration-200 flex items-center justify-center">
-                                            <svg class="w-3 h-3 text-white opacity-none peer-checked:opacity-full"
+                                            <svg class="w-3 h-3 text-white opacity-0 peer-checked:opacity-100"
                                                 viewBox="0 0 24 24" fill="none">
                                                 <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2"
                                                     stroke-linecap="round" />

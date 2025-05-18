@@ -14,7 +14,7 @@
     <!-- swiper-slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- output css -->
-     <link rel="stylesheet" href="./../input.css" />
+    <link rel="stylesheet" href="./../input.css" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             </div>
             <div
                 class="search border-t-[2px] border-b-[2px] border-white/[13%] px-[27px] py-[14px] text-center group-hover:text-left transition-all duration-300 ease-in-out">
-                <span
+                <a href="/pages/search.html"
                     class="inline-flex items-center justify-center group-hover:gap-[17px] transition-all duration-300 ease-in-out">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -37,12 +37,11 @@
                             d="M22.8333 24.125C22.4908 24.1249 22.1623 23.9888 21.9201 23.7465L16.7535 18.5799C16.5182 18.3363 16.388 18.01 16.3909 17.6713C16.3939 17.3326 16.5297 17.0087 16.7692 16.7692C17.0087 16.5297 17.3326 16.3939 17.6713 16.3909C18.01 16.388 18.3363 16.5182 18.5799 16.7535L23.7465 21.9201C23.9271 22.1008 24.0501 22.3309 24.0999 22.5814C24.1497 22.8319 24.1242 23.0916 24.0264 23.3276C23.9287 23.5636 23.7632 23.7653 23.5508 23.9072C23.3384 24.0492 23.0888 24.1249 22.8333 24.125Z"
                             fill="white" />
                     </svg>
-                    <input
-                        class="opacity-0 group-hover:opacity-100 w-0 group-hover:w-full duration-200 bg-transparent border-0 outline-0 placeholder:text-white"
-                        type="search" name="search" id="" placeholder="Search..." />
-                </span>
+                    <p class="opacity-0 group-hover:opacity-100 w-0 group-hover:w-full duration-200 text-white">
+                        Search...</p>
+                </a>
             </div>
-           <ul class="group-hover:divide-y group-hover:divide-dashed divide-white/30 px-[27px]">
+            <ul class="group-hover:divide-y group-hover:divide-dashed divide-white/30 px-[27px]">
                 <li class="py-[20px]">
                     <a href="#" class="flex items-center justify-start gap-[17px] group/item">
                         <img src="./../assets/images/channel-1.png" alt="" />
@@ -181,11 +180,11 @@
     </div>
 
     <!-- popular search -->
-    <div class="popular-search-section">
-        <div class="pl-[233px] bg-white/15 backdrop-blur-[33px] py-5 mb-[45px]">
+    <div class="bg-white/15 backdrop-blur-[33px] py-5 mb-[45px]">
+        <div class="container">
             <div class="relative max-w-[935px] rounded-[54px] bg-white/[77%] overflow-hidden">
                 <input class="w-full h-full py-[19px] px-[33px] border-0 outline-none bg-white/[77%]" type="search"
-                    name="" id="">
+                    name="" id="" placeholder="Search anything here...">
                 <span class="absolute top-1/2 right-[23px] -translate-y-1/2">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -195,64 +194,39 @@
                             d="M24.9998 26.25C24.6683 26.2499 24.3504 26.1182 24.116 25.8838L19.116 20.8838C18.8883 20.648 18.7623 20.3322 18.7652 20.0045C18.768 19.6768 18.8995 19.3632 19.1313 19.1315C19.363 18.8997 19.6765 18.7683 20.0043 18.7654C20.332 18.7626 20.6478 18.8886 20.8835 19.1163L25.8835 24.1163C26.0583 24.2911 26.1773 24.5138 26.2255 24.7562C26.2737 24.9987 26.249 25.2499 26.1544 25.4783C26.0598 25.7067 25.8996 25.9019 25.6941 26.0393C25.4886 26.1766 25.247 26.2499 24.9998 26.25Z"
                             fill="#666666" />
                     </svg>
-
                 </span>
             </div>
         </div>
-        <div class="pl-[233px] popular-searches mb-[50px]">
-            <h2 class="font-inter font-extrabold text-[28px] leading-[100%] text-white mb-[35px]">Popular Searches</h2>
-            <div class="grid grid-cols-12 gap-[134px]">
-                <div class="col-span-6">
-                    <h4 class="font-inter font-extrabold text-xl leading-[100%] text-white mb-[14px]">Tournaments</h4>
-                    <div class="flex flex-wrap gap-[11px]">
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Short
-                            Game Mastery</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Tour
-                            Highlights</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Player
-                            Profiles</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Course
-                            Tours</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Gear
-                            Reviews</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Short
-                            Game Mastery</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Course
-                            Tours</button>
-                    </div>
+    </div>
+
+    <div class="container mb-[50px]">
+        <h2 class="font-inter font-extrabold text-[28px] leading-[100%] text-white mb-[35px]">Popular Searches</h2>
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-6">
+                <h4 class="font-inter font-extrabold text-xl leading-[100%] text-white mb-[14px]">Tournaments</h4>
+                <div
+                    class="flex flex-wrap gap-[11px] *:bg-white/20 *:py-[13px] *:px-[24px] *:rounded-[11px] *:font-inter *:font-bold *:text-sm *:leading-[123%] *:text-white">
+                    <button class="">Short Game Mastery</button>
+                    <button class="">Tour Highlights</button>
+                    <button class="">Player Profiles</button>
+                    <button class="">Course Tours</button>
+                    <button class="">Gear Reviews</button>
+                    <button class="">Short Game Mastery</button>
+                    <button class="">Course Tours</button>
                 </div>
-                <div class="col-span-6">
-                    <h4 class="font-inter font-extrabold text-xl leading-[100%] text-white mb-[14px]">Players</h4>
-                    <div class="flex flex-wrap gap-[11px]">
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Short
-                            Game Mastery</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Tour
-                            Highlights</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Player
-                            Profiles</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Course
-                            Tours</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Gear
-                            Reviews</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Short
-                            Game Mastery</button>
-                        <button
-                            class="bg-white/20 py-[13px] px-[24px] rounded-[11px] font-inter font-bold text-sm leading-[123%] text-white">Course
-                            Tours</button>
-                    </div>
+            </div>
+            <div class="col-span-6">
+                <h4 class="font-inter font-extrabold text-xl leading-[100%] text-white mb-[14px]">Players</h4>
+                <div
+                    class="flex flex-wrap gap-[11px] *:bg-white/20 *:py-[13px] *:px-[24px] *:rounded-[11px] *:font-inter *:font-bold *:text-sm *:leading-[123%] *:text-white">
+                    <button>Brandon Dorwart</button>
+                    <button>Leo Botosh</button>
+                    <button>Justin Lubin</button>
+                    <button>Lincoln Rosser</button>
+                    <button>Erin Calzoni</button>
+                    <button>Leo Botosh</button>
+                    <button>Lincoln Rosser</button>
+                    <button>Erin Calzoni</button>
                 </div>
             </div>
         </div>
@@ -261,193 +235,191 @@
 
 
     <!-- fast -->
-    <div class="fast ml-[233px] pb-[100px] max-w-[1566px]">
+    <div class="container pb-[100px]">
         <h2 class="font-inter font-extrabold text-[20px] leading-[100%] text-white mb-[30px]">Videos
         </h2>
-        <div class="card-slider-section">
-            <div class="grid grid-cols-12 gap-[30px]">
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-1.png" alt="">
+        <div class="grid grid-cols-12 gap-[30px]">
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-2.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-2.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-3.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-3.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-4.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-4.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-1.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-1.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-2.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-2.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-3.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-3.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
-                <div class="col-span-3">
-                    <div class="card bg-white rounded-[30px] overflow-hidden">
-                        <div class="img rounded-b-[29px] overflow-hidden relative">
-                            <span
-                                class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
-                                    width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
-                                        fill="black" />
-                                </svg>
-                                Premium</span>
-                            <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-4.png" alt="">
+            </div>
+            <div class="col-span-3">
+                <div class="card bg-white rounded-[30px] overflow-hidden">
+                    <div class="img rounded-b-[29px] overflow-hidden relative">
+                        <span
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                                width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.77312 13.1106L0.632495 5.69682C0.54812 5.14932 1.17187 4.77557 1.615 5.10807L5.16875 7.77307C5.26112 7.84227 5.36662 7.89191 5.47882 7.91898C5.59102 7.94604 5.70756 7.94995 5.82132 7.93047C5.93509 7.911 6.04368 7.86854 6.14049 7.80569C6.2373 7.74285 6.32028 7.66093 6.38437 7.56494L9.34312 3.12744C9.65562 2.65869 10.3444 2.65869 10.6569 3.12744L13.6156 7.56494C13.6797 7.66093 13.7627 7.74285 13.8595 7.80569C13.9563 7.86854 14.0649 7.911 14.1787 7.93047C14.2924 7.94995 14.409 7.94604 14.5212 7.91898C14.6334 7.89191 14.7389 7.84227 14.8312 7.77307L18.385 5.10807C18.8287 4.77557 19.4519 5.14932 19.3675 5.69682L18.2269 13.1106H1.77312ZM17.3687 17.2243H2.63125C2.51855 17.2243 2.40697 17.2021 2.30285 17.159C2.19874 17.1159 2.10414 17.0527 2.02446 16.973C1.86353 16.812 1.77312 16.5938 1.77312 16.3662V14.4818H18.2269V16.3662C18.2269 16.8399 17.8425 17.2243 17.3687 17.2243Z"
+                                    fill="black" />
+                            </svg>
+                            Premium</span>
+                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-4.png" alt="">
+                    </div>
+                    <div class="content pt-5 pb-[25px] px-[32px]">
+                        <div class="flex items-center justify-between mb-[10px]">
+                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <div class="content pt-5 pb-[25px] px-[32px]">
-                            <div class="flex items-center justify-between mb-[10px]">
-                                <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
-                            </div>
-                            <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
-                                Tiger's major future after Open letdown, Lowry battles the elements</h3>
-                        </div>
+                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                            Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
                 </div>
             </div>
