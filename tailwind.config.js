@@ -16,19 +16,43 @@ export default {
         xl: '16px',
         '2xl': '16px',
       },
+       screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+
+        // Your custom max breakpoints
+        'max-sm': { max: '600px' },
+        'max-md': { max: '767px' },
+        'max-lg': { max: '991px' },
+        'max-xl': { max: '1300px' },
+        'max-2xl': { max: '1600px' },
+
+        // Optional: custom breakpoint around your container width
+        '3xl': '1566px',
+        'max-3xl': { max: '1566px' }
+      },
     },
     extend: {
        screens: {
-        sm: '600px',
-        md: '728px',
-        lg: '991px',
-        xl: '1170px',
-        '2xl': '1440px',
-        'max-sm': { max: '600px' }, 
-        'max-md': { max: '767px' }, 
-        'max-lg': { max: '991px' }, 
-        'max-xl': { max: '1300px' }, 
-        'max-2xl': { max: '1440px' }, 
+         'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+
+        // Your custom max breakpoints
+        'max-sm': { max: '600px' },
+        'max-md': { max: '767px' },
+        'max-lg': { max: '991px' },
+        'max-xl': { max: '1300px' },
+        'max-2xl': { max: '1600px' },
+
+        // Optional: custom breakpoint around your container width
+        '3xl': '1566px',
+        'max-3xl': { max: '1566px' }
       },
       fontFamily: {
         "playfair-display": ["Playfair Display", ...defaultTheme.fontFamily.sans],
