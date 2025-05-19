@@ -23,11 +23,11 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       600: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       992: {
@@ -46,11 +46,11 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       600: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       992: {
@@ -69,11 +69,11 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       600: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       992: {
@@ -92,11 +92,11 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       600: {
-        slidesPerView: 1.4,
+        slidesPerView: 1.2,
         spaceBetween: 17,
       },
       992: {
@@ -186,8 +186,8 @@ $(document).ready(function () {
 
     if (navbar && sidebar) {
       const navbarHeight = navbar.offsetHeight;
-      sidebar.style.top = `${navbarHeight}px`;
-      sidebar.style.height = `calc(100vh - ${navbarHeight}px)`;
+      // sidebar.style.top = `${navbarHeight}px`;
+      // sidebar.style.height = `calc(100vh - ${navbarHeight}px)`;
     }
   });
 
@@ -197,8 +197,8 @@ $(document).ready(function () {
 
     if (navbar && sidebar) {
       const navbarHeight = navbar.offsetHeight;
-      sidebar.style.top = `${navbarHeight}px`;
-      sidebar.style.height = `calc(100vh - ${navbarHeight}px)`;
+      // sidebar.style.top = `${navbarHeight}px`;
+      // sidebar.style.height = `calc(100vh - ${navbarHeight}px)`;
     }
   });
 

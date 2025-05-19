@@ -830,6 +830,10 @@ video {
   max-height: 283px;
 }
 
+.max-h-\[calc\(100vh-100px\)\]{
+  max-height: calc(100vh - 100px);
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -858,11 +862,6 @@ video {
   width: 100%;
 }
 
-.w-max{
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .max-w-\[1166px\]{
   max-width: 1166px;
 }
@@ -881,10 +880,6 @@ video {
 
 .max-w-\[935px\]{
   max-width: 935px;
-}
-
-.max-w-full{
-  max-width: 100%;
 }
 
 .-translate-x-full{
@@ -908,10 +903,6 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
-}
-
-.touch-auto{
-  touch-action: auto;
 }
 
 .resize{
@@ -1217,10 +1208,6 @@ video {
 
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-tr{
-  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
 .bg-gradient-video-bg{
@@ -2113,6 +2100,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 23px;
   }
 
+  .max-md\:mt-4{
+    margin-top: 1rem;
+  }
+
   .max-md\:block{
     display: block;
   }
@@ -2121,12 +2112,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
   }
 
-  .max-md\:hidden{
-    display: none;
-  }
-
   .max-md\:\!hidden{
     display: none !important;
+  }
+
+  .max-md\:hidden{
+    display: none;
   }
 
   .max-md\:w-\[13px\]{
@@ -2143,6 +2134,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .max-md\:max-w-\[281px\]{
     max-width: 281px;
+  }
+
+  .max-md\:max-w-full{
+    max-width: 100%;
   }
 
   .max-md\:shrink-0{
@@ -2178,12 +2173,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
          column-gap: 1rem;
   }
 
+  .max-md\:gap-y-\[30px\]{
+    row-gap: 30px;
+  }
+
   .max-md\:overflow-x-auto{
     overflow-x: auto;
   }
 
   .max-md\:rounded-none{
     border-radius: 0px;
+  }
+
+  .max-md\:rounded-\[20px\]{
+    border-radius: 20px;
   }
 
   .max-md\:border-0{
@@ -2265,6 +2268,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .max-md\:pt-\[97px\]{
     padding-top: 97px;
+  }
+
+  .max-md\:pt-4{
+    padding-top: 1rem;
   }
 
   .max-md\:text-2xl{
