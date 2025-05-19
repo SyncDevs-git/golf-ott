@@ -376,50 +376,26 @@
                             <form class="grid grid-cols-12 gap-y-[30px] max-md:pt-8 max-md:pb-0 max-md:px-0 p-[36px]">
                                 <div class="col-span-12">
                                     <div class="flex items-center gap-3">
-                                        <!-- Custom-styled checkbox -->
-                                        <div class="relative">
-                                            <input class="absolute opacity-0 w-0 h-0 peer/email" type="checkbox"
-                                                name="email" id="email">
-                                            <div
-                                                class="w-5 h-5 rounded-[4px] bg-white/20 border border-white/30 peer-checked/email:bg-primary peer-checked/email:border-primary transition-colors duration-200 flex items-center justify-center">
-                                                <svg class="w-3 h-3 text-white opacity-0 peer-checked/email:opacity-100"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                        </div>
-
                                         <label
-                                            class="font-inter font-normal text-base leading-[100%] text-white/80 cursor-pointer"
-                                            for="email">
-                                            Email Notifications
+                                        class="custom-checkbox font-inter font-normal text-base leading-[100%] text-white/80 cursor-pointer"
+                                        for="email">
+                                        Email Notifications
+                                        <input class="absolute opacity-0 w-0 h-0 peer/email" type="checkbox"
+                                            name="email" id="email">
+                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-span-12">
 
                                     <div class="flex items-center gap-3">
-                                        <!-- Custom-styled checkbox -->
-                                        <div class="relative">
-                                            <input class="absolute opacity-0 w-0 h-0 peer/push" type="checkbox"
-                                                name="push" id="push">
-
-                                            <!-- Custom checkbox appearance -->
-                                            <div
-                                                class="w-5 h-5 rounded-[4px] bg-white/20 border border-white/30 peer-checked/push:bg-primary peer-checked/push:border-primary transition-colors duration-200 flex items-center justify-center">
-                                                <svg class="w-3 h-3 text-white opacity-0 peer-checked/push:opacity-100"
-                                                    viewBox="0 0 24 24" fill="none">
-                                                    <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" />
-                                                </svg>
-                                            </div>
-                                        </div>
-
                                         <label
-                                            class="font-inter font-normal text-base leading-[100%] text-white/80 cursor-pointer"
-                                            for="push">
-                                            Push Notifications
+                                        class="custom-checkbox font-inter font-normal text-base leading-[100%] text-white/80 cursor-pointer"
+                                        for="push">
+                                        Push Notifications
+                                        <input class="absolute opacity-0 w-0 h-0 peer/push" type="checkbox"
+                                            name="push" id="push">
+                                            <span class="checkmark"></span>
                                         </label>
                                     </div>
                                 </div>

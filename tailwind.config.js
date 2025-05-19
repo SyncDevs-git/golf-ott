@@ -24,15 +24,15 @@ export default {
         '2xl': '1536px',
 
         // Your custom max breakpoints
-        'max-sm': { max: '600px' },
-        'max-md': { max: '767px' },
-        'max-lg': { max: '991px' },
-        'max-xl': { max: '1300px' },
+        'max-3xl': { max: '1566px' },
         'max-2xl': { max: '1600px' },
+        'max-xl': { max: '1300px' },
+        'max-lg': { max: '991px' },
+        'max-md': { max: '767px' },
+        'max-sm': { max: '600px' },
 
         // Optional: custom breakpoint around your container width
         '3xl': '1566px',
-        'max-3xl': { max: '1566px' }
       },
     },
     extend: {
@@ -44,15 +44,15 @@ export default {
         '2xl': '1536px',
 
         // Your custom max breakpoints
-        'max-sm': { max: '600px' },
-        'max-md': { max: '767px' },
-        'max-lg': { max: '991px' },
-        'max-xl': { max: '1300px' },
+        'max-3xl': { max: '1566px' },
         'max-2xl': { max: '1600px' },
+        'max-xl': { max: '1300px' },
+        'max-lg': { max: '991px' },
+        'max-md': { max: '767px' },
+        'max-sm': { max: '600px' },
 
         // Optional: custom breakpoint around your container width
         '3xl': '1566px',
-        'max-3xl': { max: '1566px' }
       },
       fontFamily: {
         "playfair-display": ["Playfair Display", "sans-serif"],
