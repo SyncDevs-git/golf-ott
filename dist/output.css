@@ -1433,10 +1433,6 @@ video {
   padding-top: 337px;
 }
 
-.pt-\[45px\]{
-  padding-top: 45px;
-}
-
 .pt-\[75px\]{
   padding-top: 75px;
 }
@@ -1858,16 +1854,39 @@ input[type="date"]::-webkit-inner-spin-button {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  background: transparent;
+  background: red;
   bottom: 0;
   color: transparent;
   cursor: pointer;
-  height: auto;
+  height: 100%;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-  width: auto;
+  width: 100%;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  color-scheme: dark;
+  /* Optional */
+}
+
+@-moz-document url-prefix() {
+  input[type="date"] {
+    color: transparent;
+    text-shadow: 0 0 0 #fff;
+    /* Or your text color */
+  }
 }
 
 /* The container */
@@ -2088,6 +2107,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 0px;
   }
 
+  .max-md\:mb-\[30px\]{
+    margin-bottom: 30px;
+  }
+
   .max-md\:mb-\[33px\]{
     margin-bottom: 33px;
   }
@@ -2096,12 +2119,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 50px;
   }
 
-  .max-md\:mt-\[23px\]{
-    margin-top: 23px;
-  }
-
   .max-md\:mt-4{
     margin-top: 1rem;
+  }
+
+  .max-md\:mt-\[23px\]{
+    margin-top: 23px;
   }
 
   .max-md\:block{
@@ -2160,10 +2183,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     align-items: center;
   }
 
-  .max-md\:justify-start{
-    justify-content: flex-start;
-  }
-
   .max-md\:gap-6{
     gap: 1.5rem;
   }
@@ -2185,12 +2204,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     overflow-x: auto;
   }
 
-  .max-md\:rounded-none{
-    border-radius: 0px;
-  }
-
   .max-md\:rounded-\[20px\]{
     border-radius: 20px;
+  }
+
+  .max-md\:rounded-none{
+    border-radius: 0px;
   }
 
   .max-md\:border-0{
@@ -2218,9 +2237,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-right: 0px;
   }
 
-  .max-md\:px-\[10px\]{
-    padding-left: 10px;
-    padding-right: 10px;
+  .max-md\:px-\[0px\]{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .max-md\:px-\[18px\]{
@@ -2236,11 +2255,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .max-md\:py-\[50px\]{
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .max-md\:px-\[0px\]{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .max-md\:pb-0{
@@ -2271,20 +2285,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-top: 127px;
   }
 
+  .max-md\:pt-\[153px\]{
+    padding-top: 153px;
+  }
+
   .max-md\:pt-\[165px\]{
     padding-top: 165px;
   }
 
   .max-md\:pt-\[97px\]{
     padding-top: 97px;
-  }
-
-  .max-md\:pt-4{
-    padding-top: 1rem;
-  }
-
-  .max-md\:pt-\[153px\]{
-    padding-top: 153px;
   }
 
   .max-md\:text-2xl{
