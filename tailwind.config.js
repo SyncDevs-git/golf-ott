@@ -55,7 +55,7 @@ export default {
         'max-3xl': { max: '1566px' }
       },
       fontFamily: {
-        "playfair-display": ["Playfair Display", ...defaultTheme.fontFamily.sans],
+        "playfair-display": ["Playfair Display", "sans-serif"],
         "inter": ["Inter", "sans-serif"],
       },
       colors: {
