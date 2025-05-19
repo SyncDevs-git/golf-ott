@@ -344,10 +344,10 @@
     <!-- popular search -->
     <div class="max-md:bg-transparent bg-white/15 backdrop-blur-[33px] max-md:pt-[127px] py-5 mb-[45px]">
         <div class="container">
-            <div class="relative max-w-[935px] rounded-[54px] bg-white/[77%] overflow-hidden">
-                <input class="w-full h-full py-[19px] px-[33px] border-0 outline-none bg-white/[77%]" type="search"
+            <form action="./search-result.html" class="relative max-w-[935px] rounded-[54px] bg-white/[77%] py-[15px] px-[23px] overflow-hidden flex items-center justify-between">
+                <input class="w-full h-full border-0 outline-none bg-transparent" type="search"
                     name="" id="" placeholder="Search anything here...">
-                <span class="absolute top-1/2 right-[23px] -translate-y-1/2">
+                <button type="submit" class="">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.75 23.75C11.7722 23.75 9.83879 23.1635 8.1943 22.0647C6.54981 20.9659 5.26809 19.4041 4.51121 17.5768C3.75433 15.7496 3.5563 13.7389 3.94215 11.7991C4.328 9.85929 5.28041 8.07746 6.67894 6.67893C8.07746 5.28041 9.85929 4.328 11.7991 3.94215C13.7389 3.5563 15.7496 3.75433 17.5768 4.51121C19.4041 5.26808 20.9659 6.54981 22.0647 8.1943C23.1635 9.83879 23.75 11.7722 23.75 13.75C23.747 16.4013 22.6925 18.9431 20.8178 20.8178C18.9431 22.6925 16.4013 23.747 13.75 23.75ZM13.75 6.25C12.2666 6.25 10.8166 6.68987 9.58323 7.51398C8.34986 8.33809 7.38857 9.50943 6.82091 10.8799C6.25325 12.2503 6.10473 13.7583 6.39411 15.2132C6.6835 16.668 7.39781 18.0044 8.4467 19.0533C9.4956 20.1022 10.832 20.8165 12.2868 21.1059C13.7417 21.3953 15.2497 21.2468 16.6201 20.6791C17.9906 20.1114 19.1619 19.1501 19.986 17.9168C20.8101 16.6834 21.25 15.2334 21.25 13.75C21.248 11.7615 20.4572 9.85499 19.0511 8.44889C17.645 7.0428 15.7385 6.25199 13.75 6.25Z"
@@ -356,8 +356,8 @@
                             d="M24.9998 26.25C24.6683 26.2499 24.3504 26.1182 24.116 25.8838L19.116 20.8838C18.8883 20.648 18.7623 20.3322 18.7652 20.0045C18.768 19.6768 18.8995 19.3632 19.1313 19.1315C19.363 18.8997 19.6765 18.7683 20.0043 18.7654C20.332 18.7626 20.6478 18.8886 20.8835 19.1163L25.8835 24.1163C26.0583 24.2911 26.1773 24.5138 26.2255 24.7562C26.2737 24.9987 26.249 25.2499 26.1544 25.4783C26.0598 25.7067 25.8996 25.9019 25.6941 26.0393C25.4886 26.1766 25.247 26.2499 24.9998 26.25Z"
                             fill="#666666" />
                     </svg>
-                </span>
-            </div>
+                </button>
+            </form>
         </div>
     </div>
 
@@ -400,12 +400,13 @@
     <div class="container pb-[100px]">
         <h2 class="font-inter font-extrabold text-[20px] leading-[100%] text-white mb-[30px]">Videos
         </h2>
-        <div class="grid grid-cols-12 gap-[30px]">
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+        <div class="max-md:flex max-md:items-center grid grid-cols-12 max-md:gap-x-4 gap-[30px] overflow-x-auto">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -415,20 +416,21 @@
                             Premium</span>
                         <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -436,22 +438,23 @@
                                     fill="black" />
                             </svg>
                             Premium</span>
-                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-2.png" alt="">
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -459,22 +462,23 @@
                                     fill="black" />
                             </svg>
                             Premium</span>
-                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-3.png" alt="">
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -482,22 +486,23 @@
                                     fill="black" />
                             </svg>
                             Premium</span>
-                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-4.png" alt="">
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -505,22 +510,23 @@
                                     fill="black" />
                             </svg>
                             Premium</span>
-                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-1.png" alt="">
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -528,22 +534,23 @@
                                     fill="black" />
                             </svg>
                             Premium</span>
-                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-2.png" alt="">
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -551,22 +558,23 @@
                                     fill="black" />
                             </svg>
                             Premium</span>
-                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-3.png" alt="">
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-span-3">
-                <div class="card bg-white rounded-[30px] overflow-hidden">
+            <div class="max-md:shrink-0 max-md:max-w-[281px] col-span-3">
+                <a href="./watch.html" class="card bg-white rounded-[30px] overflow-hidden block">
                     <div class="img rounded-b-[29px] overflow-hidden relative">
                         <span
-                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold text-base leading-[123%] text-black"><svg
+                            class="bg-sunglow absolute top-[19px] right-[19px] flex items-center gap-[7px] rounded-[11px] py-[9px] px-[11px]  font-inter font-semibold max-md:text-xs text-base leading-[123%] text-black">
+                            <svg class="max-md:w-[15px]"
                                 width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -574,17 +582,18 @@
                                     fill="black" />
                             </svg>
                             Premium</span>
-                        <img class="w-full h-full max-h-[208px]" src="./../assets/images/fast-4.png" alt="">
+                        <img class="w-full h-full object-cover" src="./../assets/images/fast-1.png" alt="">
                     </div>
-                    <div class="content pt-5 pb-[25px] px-[32px]">
+                    <div class="content pt-5 pb-[25px] px-[32px] max-md:px-[18px]">
                         <div class="flex items-center justify-between mb-[10px]">
-                            <p class="font-Inter font-bold text-lg leading-[155%] text-primary">Tour/News</p>
+                            <p class="font-Inter font-bold max-md:text-[13px] text-lg leading-[155%] text-primary">Tour/News</p>
                         </div>
-                        <h3 class="font-playfair-display font-extrabold text-[18px] leading-[155%] text-black ">
+                        <h3 class="font-playfair-display font-extrabold max-md:text-sm text-[18px] leading-[155%] text-black ">
                             Tiger's major future after Open letdown, Lowry battles the elements</h3>
                     </div>
-                </div>
+                </a>
             </div>
+            
         </div>
     </div>
 

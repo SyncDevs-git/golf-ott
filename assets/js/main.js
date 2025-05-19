@@ -28,7 +28,7 @@ $(document).ready(function () {
       },
       600: {
         slidesPerView: 1.4,
-       spaceBetween: 17,
+        spaceBetween: 17,
       },
       992: {
         slidesPerView: 3,
@@ -40,14 +40,18 @@ $(document).ready(function () {
   var swiper2 = new Swiper(".card-slider2", {
     slidesPerView: 3.4,
     spaceBetween: 30,
-      breakpoints: {
+    navigation: {
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2",
+    },
+    breakpoints: {
       320: {
         slidesPerView: 1.4,
         spaceBetween: 17,
       },
       600: {
         slidesPerView: 1.4,
-       spaceBetween: 17,
+        spaceBetween: 17,
       },
       992: {
         slidesPerView: 3,
@@ -59,14 +63,18 @@ $(document).ready(function () {
   var swiper3 = new Swiper(".card-slider3", {
     slidesPerView: 3.4,
     spaceBetween: 30,
-      breakpoints: {
+    navigation: {
+      nextEl: ".swiper-button-next3",
+      prevEl: ".swiper-button-prev3",
+    },
+    breakpoints: {
       320: {
         slidesPerView: 1.4,
         spaceBetween: 17,
       },
       600: {
         slidesPerView: 1.4,
-       spaceBetween: 17,
+        spaceBetween: 17,
       },
       992: {
         slidesPerView: 3,
@@ -78,14 +86,18 @@ $(document).ready(function () {
   var swiper4 = new Swiper(".card-slider4", {
     slidesPerView: 3.4,
     spaceBetween: 30,
-      breakpoints: {
+      navigation: {
+      nextEl: ".swiper-button-next4",
+      prevEl: ".swiper-button-prev4",
+    },
+    breakpoints: {
       320: {
         slidesPerView: 1.4,
         spaceBetween: 17,
       },
       600: {
         slidesPerView: 1.4,
-       spaceBetween: 17,
+        spaceBetween: 17,
       },
       992: {
         slidesPerView: 3,
@@ -154,19 +166,19 @@ $(document).ready(function () {
 
 
   window.toggleSidebar = function () {
-  const sidebar = document.getElementById('sidebar');
-  const body = document.body;
+    const sidebar = document.getElementById('sidebar');
+    const body = document.body;
 
-  const isHidden = sidebar.classList.contains('-translate-x-full');
+    const isHidden = sidebar.classList.contains('-translate-x-full');
 
-  if (isHidden) {
-    sidebar.classList.remove('-translate-x-full');
-    body.classList.add('overflow-hidden');
-  } else {
-    sidebar.classList.add('-translate-x-full');
-    body.classList.remove('overflow-hidden');
-  }
-};
+    if (isHidden) {
+      sidebar.classList.remove('-translate-x-full');
+      body.classList.add('overflow-hidden');
+    } else {
+      sidebar.classList.add('-translate-x-full');
+      body.classList.remove('overflow-hidden');
+    }
+  };
 
   window.addEventListener('load', () => {
     const navbar = document.getElementById('navbar');

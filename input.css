@@ -100,7 +100,19 @@ body {
 }
 
 /* card-slider */
-.card-slider .swiper-button-disabled {
+.fast-slider .swiper-button-disabled {
+  visibility: hidden;
+}
+/* short-game-mastery-section */
+.short-game-mastery-section .swiper-button-disabled {
+  visibility: hidden;
+}
+/* swing-mechanics-section */
+.swing-mechanics-section .swiper-button-disabled {
+  visibility: hidden;
+}
+/* legends-of-golf-section */
+.legends-of-golf-section .swiper-button-disabled {
   visibility: hidden;
 }
 
