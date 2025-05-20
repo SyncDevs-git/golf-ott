@@ -17,22 +17,22 @@ export default {
         '2xl': '16px',
       },
        screens: {
-        'sm': '640px',
+       'sm': '640px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
-        '2xl': '1400px',
-        '3xl': '1556px',
+        '2xl': '1536px',
 
         // Your custom max breakpoints
-        'max-3xl': { max: '1556px' },
-        'max-2xl': { max: '1400px' },
+        'max-3xl': { max: '1566px' },
+        'max-2xl': { max: '1600px' },
         'max-xl': { max: '1300px' },
         'max-lg': { max: '991px' },
         'max-md': { max: '767px' },
         'max-sm': { max: '600px' },
 
         // Optional: custom breakpoint around your container width
+        '3xl': '1566px',
       },
     },
     extend: {
@@ -43,8 +43,10 @@ export default {
         'xl': '1300px',
         '2xl': '1400px',
         '3xl': '1556px',
+        '4xl': '1792px',
 
         // Your custom max breakpoints
+        'max-4xl': { max: '1792px' },
         'max-3xl': { max: '1556px' },
         'max-2xl': { max: '1400px' },
         'max-xl': { max: '1300px' },
@@ -78,6 +80,9 @@ export default {
 
         // Reverse white fade (bottom transparent to top white overlay)
         'gradient-reverse-white': 'linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 100%)',
+      },
+      boxShadow: {
+        tooltip: '0 4px 10px rgba(0, 0, 0, 0.1)',
       },
     },
   },

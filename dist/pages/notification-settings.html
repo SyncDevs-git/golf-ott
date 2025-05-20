@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.c44eb7d6.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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" />
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAn9JREFUOE99U0FIFGEU/t7M7oy7pa2FRZcKDLNdtSAtYTu4ewg6dJFOpWthaXmtIIigCIQoLxKsGpaNniIoOkbtariH0rrUyFogER1awUrF1Z2d+V/MuGuTUu/0/++9773/+/73CC5jgKa0yGGAzkDiJjAqAWIwvgAiIQOD1bHRSTeGipf0YLiUFeWOAJ0FoLiTXGeDmB/9yBuXjranFm2/U2B8MFwaUNQnBBxzJQsG51aTSAUgFQAWC+4ItSUfrBWY0iIDTHTeBU4x8628xW9kxSRipUESfJ2JGsHiZmhmtJtuQDgF0lpTvUVSyvXsZ8vZ+dP1ne+ybhqT/Yf8fv/m8P6WsZdE4GKMdK0pDpIuFByzQqa62lOvMv/QYIObdC06DULVaoQHQq3JzvVZ+uOgYq4EApvWBRZMmUkfjtpCOaoLoKu2NREv5n3uPa4a5ctXIannJFktF2YWYId60UzShyMGQN7VB+BiKJboc44M0kci93zbaroCVc2QlTKY2VnMTQ3DXPpeLGDYBdIA7StQ6A+1Jh09PgxFKz2+Mn1n4zVV8vrXWhqL35CZuAuwZTf8ZGsQB2GDiB+16AlfRc3zigN/JMkvZSB5SpCZ6IGV+2nT6SNdixwB0WvXNz5dzs63eJXSOn/5rvHtDZdlm8/C1wQ8JVvh9e/A7PtesLViyCzCZM9/eiQSF0wu9XlMEHVLoNuBvc0HWeQhqwEbhNyvGWQzkyDm+8FYssMZZXsPzPWjzBAgmAApypbdINkHa2XOEZKBFx4jd7K6PbX41zIJVelhprb/LZNE/JByxhUbvLYL7o91RhtoB6QoCHsAtpvMgCkJ8FAwlnxLtv4F+w2PNwwJM7RVUwAAAABJRU5ErkJggg==" />
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
+
+    <!-- title -->
+    <title>Golf - OTT | Home</title>
+    <!-- swiper-slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- output css -->
+    
+  <script type="module" crossorigin src="/assets/main.47a8e874.js"></script>
+  <link rel="stylesheet" href="/assets/main.b42b5e83.css">
+</head>
+
+<body class="bg-gradient-reverse-white">
+    <!-- desktop sidebar -->
+    <div
+        class="group sidebar transition-all duration-300 ease-in-out hover:w-[323px] w-[113px] h-screen overflow-hidden fixed top-0 z-10 max-lg:hidden">
+        <div
+            class="sidebar-scroll bg-white/15 backdrop-blur-[33px] w-full h-full pb-32 overflow-y-auto overflow-x-hidden">
+            <a href="/index.html" class="logo px-[27px] py-[21px] inline-block">
+                <img src="data:image/png;base64,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" alt="" />
+            </a>
+            <div
+                class="search border-t-[2px] border-b-[2px] border-white/[13%] px-[27px] py-[14px] text-center group-hover:text-left transition-all duration-300 ease-in-out mb-5">
+                <a href="/pages/search.html"
+                    class="inline-flex items-center justify-center group-hover:gap-[17px] transition-all duration-300 ease-in-out">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.2083 21.5417C9.1646 21.5417 7.16675 20.9356 5.46745 19.8002C3.76814 18.6647 2.44369 17.0509 1.66158 15.1627C0.879477 13.2746 0.674843 11.1969 1.07356 9.1924C1.47227 7.18793 2.45643 5.3467 3.90157 3.90156C5.34671 2.45642 7.18793 1.47226 9.1924 1.07355C11.1969 0.674835 13.2746 0.87947 15.1627 1.66158C17.0509 2.44368 18.6647 3.76813 19.8002 5.46744C20.9356 7.16675 21.5417 9.16459 21.5417 11.2083C21.5386 13.948 20.4489 16.5745 18.5117 18.5117C16.5745 20.4489 13.948 21.5386 11.2083 21.5417ZM11.2083 3.45833C9.67553 3.45833 8.17715 3.91286 6.90267 4.76444C5.62819 5.61602 4.63485 6.82641 4.04827 8.24253C3.46169 9.65866 3.30822 11.2169 3.60725 12.7203C3.90629 14.2236 4.6444 15.6046 5.72826 16.6884C6.81212 17.7723 8.19304 18.5104 9.69639 18.8094C11.1997 19.1085 12.758 18.955 14.1741 18.3684C15.5903 17.7818 16.8006 16.7885 17.6522 15.514C18.5038 14.2395 18.9583 12.7411 18.9583 11.2083C18.9563 9.15353 18.1391 7.18348 16.6861 5.73052C15.2332 4.27756 13.2631 3.46038 11.2083 3.45833Z"
+                            fill="white" />
+                        <path
+                            d="M22.8333 24.125C22.4908 24.1249 22.1623 23.9888 21.9201 23.7465L16.7535 18.5799C16.5182 18.3363 16.388 18.01 16.3909 17.6713C16.3939 17.3326 16.5297 17.0087 16.7692 16.7692C17.0087 16.5297 17.3326 16.3939 17.6713 16.3909C18.01 16.388 18.3363 16.5182 18.5799 16.7535L23.7465 21.9201C23.9271 22.1008 24.0501 22.3309 24.0999 22.5814C24.1497 22.8319 24.1242 23.0916 24.0264 23.3276C23.9287 23.5636 23.7632 23.7653 23.5508 23.9072C23.3384 24.0492 23.0888 24.1249 22.8333 24.125Z"
+                            fill="white" />
+                    </svg>
+                    <p class="opacity-0 group-hover:opacity-100 w-0 group-hover:w-full duration-200 text-white">
+                        Search...</p>
+                </a>
+            </div>
+            <ul class="group-hover:divide-y group-hover:divide-dashed divide-white px-[27px]">
+                <li class="pb-[10px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-1.012fcfd0.png" alt="" />
+                        <span class="flex items-center justify-between w-full">
+                            <p
+                                class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-primary">
+                                Golf Channels
+                            </p>
+                            <svg class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary"
+                                width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.88532 15.9375C5.31687 15.937 5.73061 15.7654 6.03577 15.4602C6.34092 15.155 6.51258 14.7413 6.51307 14.3098V2.69025C6.51307 1.7927 5.78287 1.0625 4.88532 1.0625C3.98777 1.0625 3.25757 1.7927 3.25757 2.69025V14.3098C3.25806 14.7413 3.42971 15.155 3.73487 15.4602C4.04002 15.7654 4.45376 15.937 4.88532 15.9375ZM13.7426 14.3098V2.69025C13.7426 1.7927 13.0124 1.0625 12.1148 1.0625C11.2173 1.0625 10.4871 1.7927 10.4871 2.69025V14.3098C10.4876 14.7413 10.6592 15.155 10.9644 15.4602C11.2695 15.7654 11.6833 15.937 12.1148 15.9375C12.5464 15.937 12.9601 15.7654 13.2653 15.4602C13.5704 15.155 13.7421 14.7413 13.7426 14.3098Z"
+                                    fill="#D5A342" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-2.cf0f71e1.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-3.5c5e54d5.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Fairway TV
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-4.365f69d7.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            TeeView
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-5.23f94ca2.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Golf Network
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-6.4e92e427.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Greenside Picks
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-7.7b3a6e4b.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            SwingZone
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-8.857dd25f.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Pro Circles
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="data:image/png;base64,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" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Tee Time Channels
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-2.cf0f71e1.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[10px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-3.5c5e54d5.png" alt="" />
+                        <p
+                            class="opacity-0 group-hover:opacity-100 duration-200 font-Inter font-bold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div
+            class="settings divide-y divide-dashed divide-white/30 px-[27px] bg-white/10 backdrop-blur-[50px] sticky bottom-0 rounded-t-[25px] text-center flex flex-col">
+            <a href="/pages/my-profile-settings.html"
+                class="inline-flex items-center justify-center group-hover:gap-[17px] py-[21px]">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.3708 12.8013L18.4405 11.2919C18.465 11.0591 18.486 10.787 18.486 10.4991C18.486 10.2113 18.4659 9.93915 18.4405 9.70639L20.3725 8.19615C20.7313 7.91265 20.8293 7.40951 20.6009 6.99042L18.5937 3.5175C18.3793 3.12551 17.9094 2.92425 17.4325 3.10013L15.1549 4.01449C14.7183 3.69949 14.2606 3.4335 13.7873 3.22088L13.4408 0.805014C13.3839 0.3465 12.9849 0 12.5133 0H8.48831C8.01667 0 7.61857 0.3465 7.56254 0.798L7.21518 3.22264C6.75667 3.42915 6.30607 3.69165 5.85018 4.01625L3.56643 3.09926C3.13852 2.93389 2.62664 3.11936 2.41402 3.50962L0.404169 6.98689C0.167057 7.38765 0.265044 7.90826 0.631682 8.19878L2.56192 9.70815C2.53128 10.003 2.51643 10.2594 2.51643 10.5C2.51643 10.7407 2.53132 10.997 2.56192 11.2928L0.629919 12.803C0.271155 13.0874 0.17403 13.5905 0.402405 14.0088L2.40967 17.4816C2.62406 17.8728 3.08954 18.0758 3.57078 17.899L5.84842 16.9847C6.28417 17.2988 6.74178 17.5648 7.21518 17.7783L7.56168 20.1933C7.61853 20.6535 8.01667 21 8.48917 21H12.5142C12.9858 21 13.3848 20.6535 13.4408 20.202L13.7881 17.7783C14.2467 17.5709 14.6964 17.3092 15.1531 16.9837L17.4369 17.9007C17.5462 17.9435 17.6625 17.9655 17.7799 17.9655C18.1194 17.9655 18.4318 17.78 18.5893 17.4912L20.6053 14C20.8293 13.5905 20.7313 13.0874 20.3708 12.8013ZM10.5008 14C8.57054 14 7.00079 12.4302 7.00079 10.5C7.00079 8.56976 8.57054 7.00001 10.5008 7.00001C12.431 7.00001 14.0008 8.56976 14.0008 10.5C14.0008 12.4302 12.431 14 10.5008 14Z"
+                        fill="white" />
+                </svg>
+                <p
+                    class="opacity-0 group-hover:opacity-100 duration-200 w-0 group-hover:w-auto font-Inter font-medium text-[15px] leading-[130%] text-white">
+                    Settings
+                </p>
+            </a>
+            <a href="/pages/my-profile-settings-without-login.html"
+                class="inline-flex items-center justify-center group-hover:gap-[17px] py-[21px]">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.5337 10.1478C11.8076 10.1478 12.9107 9.69083 13.812 8.78936C14.7133 7.88807 15.1702 6.78527 15.1702 5.51124C15.1702 4.2376 14.7133 3.13468 13.8118 2.23305C12.9104 1.33188 11.8074 0.875 10.5337 0.875C9.25962 0.875 8.15678 1.33188 7.25549 2.2332C6.35421 3.13453 5.89714 4.23748 5.89714 5.51124C5.89714 6.78527 6.35417 7.88822 7.25564 8.78955C8.15712 9.69072 9.26007 10.1478 10.5337 10.1478ZM18.6463 15.6772C18.6203 15.3021 18.5677 14.8929 18.4903 14.4609C18.4122 14.0255 18.3116 13.614 18.1912 13.2379C18.0668 12.8492 17.8976 12.4653 17.6885 12.0974C17.4714 11.7155 17.2165 11.383 16.9303 11.1094C16.6312 10.8232 16.2649 10.5931 15.8413 10.4251C15.4193 10.2582 14.9515 10.1736 14.4511 10.1736C14.2546 10.1736 14.0646 10.2542 13.6976 10.4932C13.4367 10.6631 13.175 10.8318 12.9126 10.9993C12.6604 11.1599 12.3188 11.3105 11.8969 11.4468C11.4852 11.58 11.0672 11.6475 10.6547 11.6475C10.2422 11.6475 9.8243 11.58 9.41219 11.4468C8.99072 11.3106 8.64912 11.1601 8.39721 10.9994C8.10508 10.8127 7.84077 10.6424 7.6115 10.493C7.24493 10.2541 7.05472 10.1734 6.85824 10.1734C6.35771 10.1734 5.89011 10.2582 5.46815 10.4253C5.04488 10.5929 4.67846 10.823 4.379 11.1096C4.09307 11.3833 3.83797 11.7156 3.62118 12.0974C3.41222 12.4653 3.24303 12.849 3.11847 13.2381C2.99816 13.6142 2.89758 14.0255 2.81946 14.4609C2.74204 14.8924 2.68948 15.3017 2.66347 15.6776C2.63758 16.056 2.62476 16.4351 2.625 16.8144C2.625 17.8192 2.94443 18.6327 3.57434 19.2326C4.19646 19.8247 5.01962 20.125 6.02065 20.125H15.2896C16.2906 20.125 17.1135 19.8248 17.7358 19.2327C18.3658 18.6331 18.6852 17.8195 18.6852 16.8142C18.6851 16.4264 18.672 16.0438 18.6463 15.6772Z"
+                        fill="white" />
+                </svg>
+                <p
+                    class="opacity-0 group-hover:opacity-100 duration-200 w-0 group-hover:w-auto font-Inter font-medium text-[15px] leading-[130%] text-white">
+                    Login
+                </p>
+            </a>
+        </div>
+    </div>
+
+    <!-- mobile navbar -->
+    <div class="w-full fixed top-0 z-10 max-lg:block hidden ">
+        <div id="navbar" class="flex items-center justify-between py-[14px] px-5 bg-white/15 backdrop-blur-[33px]">
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="" />
+            </div>
+            <div class="text-center flex items-center justify-end gap-[26px]">
+                <a href="./search.html"
+                        class="inline-flex items-center justify-center group-hover:gap-[17px] transition-all duration-300 ease-in-out">
+                        <svg width="25" height="25" viewBox="0 0 25 25"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2083 21.5417C9.1646 21.5417 7.16675 20.9356 5.46745 19.8002C3.76814 18.6647 2.44369 17.0509 1.66158 15.1627C0.879477 13.2746 0.674843 11.1969 1.07356 9.1924C1.47227 7.18793 2.45643 5.3467 3.90157 3.90156C5.34671 2.45642 7.18793 1.47226 9.1924 1.07355C11.1969 0.674835 13.2746 0.87947 15.1627 1.66158C17.0509 2.44368 18.6647 3.76813 19.8002 5.46744C20.9356 7.16675 21.5417 9.16459 21.5417 11.2083C21.5386 13.948 20.4489 16.5745 18.5117 18.5117C16.5745 20.4489 13.948 21.5386 11.2083 21.5417ZM11.2083 3.45833C9.67553 3.45833 8.17715 3.91286 6.90267 4.76444C5.62819 5.61602 4.63485 6.82641 4.04827 8.24253C3.46169 9.65866 3.30822 11.2169 3.60725 12.7203C3.90629 14.2236 4.6444 15.6046 5.72826 16.6884C6.81212 17.7723 8.19304 18.5104 9.69639 18.8094C11.1997 19.1085 12.758 18.955 14.1741 18.3684C15.5903 17.7818 16.8006 16.7885 17.6522 15.514C18.5038 14.2395 18.9583 12.7411 18.9583 11.2083C18.9563 9.15353 18.1391 7.18348 16.6861 5.73052C15.2332 4.27756 13.2631 3.46038 11.2083 3.45833Z"
+                                fill="white" />
+                            <path
+                                d="M22.8333 24.125C22.4908 24.1249 22.1623 23.9888 21.9201 23.7465L16.7535 18.5799C16.5182 18.3363 16.388 18.01 16.3909 17.6713C16.3939 17.3326 16.5297 17.0087 16.7692 16.7692C17.0087 16.5297 17.3326 16.3939 17.6713 16.3909C18.01 16.388 18.3363 16.5182 18.5799 16.7535L23.7465 21.9201C23.9271 22.1008 24.0501 22.3309 24.0999 22.5814C24.1497 22.8319 24.1242 23.0916 24.0264 23.3276C23.9287 23.5636 23.7632 23.7653 23.5508 23.9072C23.3384 24.0492 23.0888 24.1249 22.8333 24.125Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="./my-profile-settings.html"
+                        class="inline-flex items-center justify-center group-hover:gap-[17px] py-[21px]">
+                        <svg width="21" height="21" viewBox="0 0 21 21"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.3708 12.8013L18.4405 11.2919C18.465 11.0591 18.486 10.787 18.486 10.4991C18.486 10.2113 18.4659 9.93915 18.4405 9.70639L20.3725 8.19615C20.7313 7.91265 20.8293 7.40951 20.6009 6.99042L18.5937 3.5175C18.3793 3.12551 17.9094 2.92425 17.4325 3.10013L15.1549 4.01449C14.7183 3.69949 14.2606 3.4335 13.7873 3.22088L13.4408 0.805014C13.3839 0.3465 12.9849 0 12.5133 0H8.48831C8.01667 0 7.61857 0.3465 7.56254 0.798L7.21518 3.22264C6.75667 3.42915 6.30607 3.69165 5.85018 4.01625L3.56643 3.09926C3.13852 2.93389 2.62664 3.11936 2.41402 3.50962L0.404169 6.98689C0.167057 7.38765 0.265044 7.90826 0.631682 8.19878L2.56192 9.70815C2.53128 10.003 2.51643 10.2594 2.51643 10.5C2.51643 10.7407 2.53132 10.997 2.56192 11.2928L0.629919 12.803C0.271155 13.0874 0.17403 13.5905 0.402405 14.0088L2.40967 17.4816C2.62406 17.8728 3.08954 18.0758 3.57078 17.899L5.84842 16.9847C6.28417 17.2988 6.74178 17.5648 7.21518 17.7783L7.56168 20.1933C7.61853 20.6535 8.01667 21 8.48917 21H12.5142C12.9858 21 13.3848 20.6535 13.4408 20.202L13.7881 17.7783C14.2467 17.5709 14.6964 17.3092 15.1531 16.9837L17.4369 17.9007C17.5462 17.9435 17.6625 17.9655 17.7799 17.9655C18.1194 17.9655 18.4318 17.78 18.5893 17.4912L20.6053 14C20.8293 13.5905 20.7313 13.0874 20.3708 12.8013ZM10.5008 14C8.57054 14 7.00079 12.4302 7.00079 10.5C7.00079 8.56976 8.57054 7.00001 10.5008 7.00001C12.431 7.00001 14.0008 8.56976 14.0008 10.5C14.0008 12.4302 12.431 14 10.5008 14Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="./my-profile-settings-without-login.html"
+                        class="inline-flex items-center justify-center group-hover:gap-[17px] py-[21px]">
+                        <svg width="21" height="21" viewBox="0 0 21 21"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5337 10.1478C11.8076 10.1478 12.9107 9.69083 13.812 8.78936C14.7133 7.88807 15.1702 6.78527 15.1702 5.51124C15.1702 4.2376 14.7133 3.13468 13.8118 2.23305C12.9104 1.33188 11.8074 0.875 10.5337 0.875C9.25962 0.875 8.15678 1.33188 7.25549 2.2332C6.35421 3.13453 5.89714 4.23748 5.89714 5.51124C5.89714 6.78527 6.35417 7.88822 7.25564 8.78955C8.15712 9.69072 9.26007 10.1478 10.5337 10.1478ZM18.6463 15.6772C18.6203 15.3021 18.5677 14.8929 18.4903 14.4609C18.4122 14.0255 18.3116 13.614 18.1912 13.2379C18.0668 12.8492 17.8976 12.4653 17.6885 12.0974C17.4714 11.7155 17.2165 11.383 16.9303 11.1094C16.6312 10.8232 16.2649 10.5931 15.8413 10.4251C15.4193 10.2582 14.9515 10.1736 14.4511 10.1736C14.2546 10.1736 14.0646 10.2542 13.6976 10.4932C13.4367 10.6631 13.175 10.8318 12.9126 10.9993C12.6604 11.1599 12.3188 11.3105 11.8969 11.4468C11.4852 11.58 11.0672 11.6475 10.6547 11.6475C10.2422 11.6475 9.8243 11.58 9.41219 11.4468C8.99072 11.3106 8.64912 11.1601 8.39721 10.9994C8.10508 10.8127 7.84077 10.6424 7.6115 10.493C7.24493 10.2541 7.05472 10.1734 6.85824 10.1734C6.35771 10.1734 5.89011 10.2582 5.46815 10.4253C5.04488 10.5929 4.67846 10.823 4.379 11.1096C4.09307 11.3833 3.83797 11.7156 3.62118 12.0974C3.41222 12.4653 3.24303 12.849 3.11847 13.2381C2.99816 13.6142 2.89758 14.0255 2.81946 14.4609C2.74204 14.8924 2.68948 15.3017 2.66347 15.6776C2.63758 16.056 2.62476 16.4351 2.625 16.8144C2.625 17.8192 2.94443 18.6327 3.57434 19.2326C4.19646 19.8247 5.01962 20.125 6.02065 20.125H15.2896C16.2906 20.125 17.1135 19.8248 17.7358 19.2327C18.3658 18.6331 18.6852 17.8195 18.6852 16.8142C18.6851 16.4264 18.672 16.0438 18.6463 15.6772Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                <button onclick="toggleSidebar()" href="#"
+                    class="inline-flex items-center justify-center group-hover:gap-[17px] py-[21px]">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.20834 6.875H18.7917C19.1563 6.875 19.5061 6.73013 19.7639 6.47227C20.0218 6.21441 20.1667 5.86467 20.1667 5.5C20.1667 5.13533 20.0218 4.78559 19.7639 4.52773C19.5061 4.26987 19.1563 4.125 18.7917 4.125H3.20834C2.84367 4.125 2.49393 4.26987 2.23607 4.52773C1.97821 4.78559 1.83334 5.13533 1.83334 5.5C1.83334 5.86467 1.97821 6.21441 2.23607 6.47227C2.49393 6.73013 2.84367 6.875 3.20834 6.875ZM18.7917 9.625H3.20834C2.84367 9.625 2.49393 9.76987 2.23607 10.0277C1.97821 10.2856 1.83334 10.6353 1.83334 11C1.83334 11.3647 1.97821 11.7144 2.23607 11.9723C2.49393 12.2301 2.84367 12.375 3.20834 12.375H18.7917C19.1563 12.375 19.5061 12.2301 19.7639 11.9723C20.0218 11.7144 20.1667 11.3647 20.1667 11C20.1667 10.6353 20.0218 10.2856 19.7639 10.0277C19.5061 9.76987 19.1563 9.625 18.7917 9.625ZM18.7917 15.125H3.20834C2.84367 15.125 2.49393 15.2699 2.23607 15.5277C1.97821 15.7856 1.83334 16.1353 1.83334 16.5C1.83334 16.8647 1.97821 17.2144 2.23607 17.4723C2.49393 17.7301 2.84367 17.875 3.20834 17.875H18.7917C19.1563 17.875 19.5061 17.7301 19.7639 17.4723C20.0218 17.2144 20.1667 16.8647 20.1667 16.5C20.1667 16.1353 20.0218 15.7856 19.7639 15.5277C19.5061 15.2699 19.1563 15.125 18.7917 15.125Z"
+                            fill="white" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+        <!-- Offcanvas Sidebar -->
+        <div id="sidebar"
+            class="px-8 pt-8 border-t-2 border-white/10 overflow-y-auto absolute left-0 w-full z-50 transform -translate-x-full transition-transform duration-300 ease-in-out bg-white/15 backdrop-blur-[33px]">
+            <h4 class="font-inter font-extrabold text-[20px] leading-[100%] text-white">Channels</h4>
+            <ul class="divide-y divide-dashed divide-white/30">
+                <li class="py-[20px]">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-1.012fcfd0.png" alt="" />
+                        <span class="flex items-center justify-between w-full">
+                            <p class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-primary">
+                                Golf Channels
+                            </p>
+                            <svg class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-primary"
+                                width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.88532 15.9375C5.31687 15.937 5.73061 15.7654 6.03577 15.4602C6.34092 15.155 6.51258 14.7413 6.51307 14.3098V2.69025C6.51307 1.7927 5.78287 1.0625 4.88532 1.0625C3.98777 1.0625 3.25757 1.7927 3.25757 2.69025V14.3098C3.25806 14.7413 3.42971 15.155 3.73487 15.4602C4.04002 15.7654 4.45376 15.937 4.88532 15.9375ZM13.7426 14.3098V2.69025C13.7426 1.7927 13.0124 1.0625 12.1148 1.0625C11.2173 1.0625 10.4871 1.7927 10.4871 2.69025V14.3098C10.4876 14.7413 10.6592 15.155 10.9644 15.4602C11.2695 15.7654 11.6833 15.937 12.1148 15.9375C12.5464 15.937 12.9601 15.7654 13.2653 15.4602C13.5704 15.155 13.7421 14.7413 13.7426 14.3098Z"
+                                    fill="#D5A342" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-2.cf0f71e1.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-3.5c5e54d5.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Fairway TV
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-4.365f69d7.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            TeeView
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-5.23f94ca2.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Golf Network
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-6.4e92e427.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Greenside Picks
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-7.7b3a6e4b.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            SwingZone
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-8.857dd25f.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Pro Circles
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="data:image/png;base64,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" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Tee Time Channels
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-2.cf0f71e1.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+                <li class="py-[20px] opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out">
+                    <a href="#" class="flex items-center justify-start gap-[17px] group/item">
+                        <img src="/assets/channel-3.5c5e54d5.png" alt="" />
+                        <p
+                            class="duration-200 font-Inter font-extrabold text-lg leading-[130%] text-white group-hover/item:text-primary">
+                            Clubhouse Channel
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="settings min-h-screen flex max-md:items-start max-md:pt-[153px] items-center justify-center">
+        <div class="container">
+            <div class="max-w-[768px] mx-auto">
+                <div class="rounded-[20px] max-md:rounded-none bg-white/10 max-md:bg-transparent w-full mb-[25px]">
+                    <div class="max-md:hidden flex items-center justify-between px-[36px] py-[20px] border-b border-white/15">
+                        <h5 class="font-inter font-extrabold text-[22px] leading-[100%] text-white">Settings</h5>
+                        <button
+                            class="bg-primary rounded-[11px] py-[11.5px] px-[30px] font-inter font-semibold text-base leading-[123%] text-black hover:opacity-60 transition-opacity duration-300 ease-linear">Save</button>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <div class="max-md:col-span-12 col-span-4 max-md:border-0 border-r border-white/15 flex flex-col justify-between">
+                            <div class="flex flex-col max-md:flex-row max-md:overflow-x-auto max-md:*:whitespace-nowrap max-md:gap-6 gap-8 max-md:py-0 py-[39px]">
+                                <a href="./my-profile-settings.html"
+                                    class="text-white/30 font-inter max-md:text-base  text-lg leading-[123%] border-l-2 hover:text-white border-transparent px-[35px] max-md:border-b-2 max-md:border-l-0 max-md:pb-[15px] max-md:px-[0px]">My
+                                    Profile</a>
+                                <a href="./change-password-settings.html"
+                                    class="text-white/30 font-inter font-medium max-md:text-base text-lg leading-[123%] hover:text-white border-l-2 border-transparent px-[35px] max-md:border-b-2 max-md:border-l-0 max-md:pb-[15px] max-md:px-[0px]">Change
+                                    Password</a>
+                                <a href="./playback-settings.html"
+                                    class="text-white/30 font-inter font-medium max-md:text-base  text-lg leading-[123%] hover:text-white border-l-2 border-transparent px-[35px] max-md:border-b-2 max-md:border-l-0 max-md:pb-[15px] max-md:px-[0px]">Playback
+                                    Settings</a>
+                                <a href="./notification-settings.html"
+                                    class="font-inter font-medium  max-md:text-base text-lg leading-[123%] text-white border-l-2 border-primary px-[35px] max-md:border-b-2 max-md:border-l-0 max-md:pb-[15px] max-md:px-[0px]">Notification
+                                    Settings</a>
+                            </div>
+                            <div class="max-md:hidden border-t border-white/15 pt-[20px] pb-[25px] flex items-center justify-center">
+                                <a href="#"
+                                    class="font-inter font-bold text-base leading-[100%] text-primary hover:opacity-60 transition-opacity duration-300 ease-linear">Need
+                                    Help?</a>
+                            </div>
+                        </div>
+                        <div class="max-md:col-span-12 col-span-8">
+                            <form class="grid grid-cols-12 gap-y-[30px] max-md:pt-8 max-md:pb-0 max-md:px-0 p-[36px]">
+                                <div class="col-span-12">
+                                    <div class="flex items-center gap-3">
+                                        <label
+                                        class="custom-checkbox font-inter font-normal text-base leading-[100%] text-white/80 cursor-pointer"
+                                        for="email">
+                                        Email Notifications
+                                        <input class="absolute opacity-0 w-0 h-0 peer/email" type="checkbox"
+                                            name="email" id="email">
+                                             <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-span-12">
+
+                                    <div class="flex items-center gap-3">
+                                        <label
+                                        class="custom-checkbox font-inter font-normal text-base leading-[100%] text-white/80 cursor-pointer"
+                                        for="push">
+                                        Push Notifications
+                                        <input class="absolute opacity-0 w-0 h-0 peer/push" type="checkbox"
+                                            name="push" id="push">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p class="font-inter font-normal text-base leading-[140%] text-white">If you want to delete your
+                    account, <a href=""
+                        class="font-medium underline text-primary hover:opacity-60 transition-opacity duration-300 ease-linear">please
+                        contact support</a></p>
+                <div
+                    class="max-md:block hidden bg-white/10 flex items-center justify-center fixed bottom-0 left-0 w-full py-[19px] px-5">
+                    <button
+                        class="w-full bg-primary rounded-[11px] py-[11.5px] px-[30px] font-inter font-semibold text-base leading-[123%] text-black hover:opacity-60 transition-opacity duration-300 ease-linear">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- swiper-slider js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    
+</body>
+
+</html>
