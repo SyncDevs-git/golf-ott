@@ -5,8 +5,27 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #D5A342;
+  --color-midnightBlue: #14283C;
+  --color-gray: #aaaaaa;
+  --color-sunglow: #FFB743;
+  --color-gradient-start: #14283C;
+}
+
+/* Define a custom theme color palette using CSS variables, and apply it dynamically by toggling classes on the <body> element. */
+.theme-red {
+  --color-midnightBlue: #7f1d1d;  
+  --color-gradient-start: #7f1d1d;
+}
+
+.theme-blue {
+  --color-midnightBlue: #102a43;  
+  --color-gradient-start: #0e355e;   
+}
+
 body {
-  @apply bg-secondary;
+  @apply bg-midnightBlue;
 }
 
 .sidebar-scroll {
@@ -243,12 +262,20 @@ input[type="date"] {
   }
 }
 
-@media (min-width:993px) and (max-width:1792px) {
+@media screen and (min-width:2000px) {
   .container {
-    max-width: 100% !important;
+    max-width: 2800px !important;
     width: 100% !important;
-    padding-left: 100px !important;
-    padding-right: 100px !important;
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+  }
+
+  .watch_hero_title {
+    font-size: 44px;
+  }
+
+  .card_title {
+    font-size: 21px;
   }
 }
 
@@ -257,9 +284,10 @@ input[type="date"] {
     padding-top: 240px;
   }
 
-  .play-icon  {
+  .play-icon {
     margin-bottom: 0px;
   }
+
   .play-icon svg {
     height: 115px;
     width: auto;
@@ -279,11 +307,38 @@ input[type="date"] {
   .hero_date {
     font-size: 17px;
   }
-  .card_section_title{
+
+  .card_section_title {
     font-size: 35px;
   }
-   .card_title{
+
+  .card_title {
     font-size: 19px;
+  }
+
+  .watch_hero_title {
+    font-size: 32px;
+    max-width: 850px;
+  }
+
+  .watch_hero_desc {
+    max-width: 850px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width:993px) and (max-width:1792px) {
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .hero-video-section {
+    padding-top: 125px;
   }
 }
 
@@ -292,5 +347,11 @@ input[type="date"] {
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .card_title {
+    font-size: 16px !important;
   }
 }

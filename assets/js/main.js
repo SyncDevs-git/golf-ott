@@ -42,6 +42,14 @@ $(document).ready(function () {
         slidesPerView: 3.4,
         spaceBetween: 30,
       },
+      2304: {
+        slidesPerView: 4.2,
+        spaceBetween: 30,
+      },
+        3000: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -75,6 +83,14 @@ $(document).ready(function () {
         slidesPerView: 3.4,
         spaceBetween: 30,
       },
+       2304: {
+        slidesPerView: 4.2,
+        spaceBetween: 30,
+      },
+        3000: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
     },
   });
   // Card Slider3
@@ -106,6 +122,14 @@ $(document).ready(function () {
         slidesPerView: 3.4,
         spaceBetween: 30,
       },
+       2304: {
+        slidesPerView: 4.2,
+        spaceBetween: 30,
+      },
+        3000: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
     },
   });
   // Card Slider4
@@ -135,6 +159,14 @@ $(document).ready(function () {
       },
       1444: {
         slidesPerView: 3.4,
+        spaceBetween: 30,
+      },
+       2304: {
+        slidesPerView: 4.2,
+        spaceBetween: 30,
+      },
+       3000: {
+        slidesPerView: 5,
         spaceBetween: 30,
       },
     },

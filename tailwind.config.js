@@ -39,6 +39,7 @@ export default {
         'xl': '1300px',
         '2xl': '1400px',
         '3xl': '1556px',
+        'tv': '2000px',
         // Your custom max breakpoints
         'max-3xl': { max: '1556px' },
         'max-2xl': { max: '1400px' },
@@ -52,18 +53,17 @@ export default {
         "inter": ["Inter", "sans-serif"],
       },
       colors: {
-        primary: '#D5A342',
-        secondary: '#14283C',
-        midnightBlue: '#14283C',
-        gray: '#aaaaaa',
-        sunglow: '#FFB743',
+        primary: "var(--color-primary)",
+        midnightBlue: "var(--color-midnightBlue)",
+        gray: "var(--color-gray)",
+        sunglow: "var(--color-sunglow)",
       },
       backgroundImage: {
         // Bottom to top
-        'gradient-bt-dark': 'linear-gradient(0deg, #14283C 0%, rgba(20, 40, 60, 0) 100%)',
+        'gradient-bt-dark': 'linear-gradient(0deg, var(--color-gradient-start, --color-midnightBlue) 0%, rgba(20, 40, 60, 0) 100%)',
 
-        // Left to right (diagonal)
-        'gradient-diagonal-dark': 'linear-gradient(45deg, #14283C 0%, rgba(20, 40, 60, 0) 100%)',
+        // Diagonal
+        'gradient-diagonal-dark': 'linear-gradient(45deg, var(--color-gradient-start, --color-midnightBlue) 0%, rgba(20, 40, 60, 0) 100%)',
 
         // Background (white overlay fading up)
         'gradient-bg-white-soft': 'linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%)',
@@ -73,6 +73,8 @@ export default {
 
         // Reverse white fade (bottom transparent to top white overlay)
         'gradient-reverse-white': 'linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 100%)',
+        'gradient-slider-arrow':
+          'linear-gradient(270deg, var(--color-gradient-start, #14283C) 0%, rgba(20, 40, 60, 0) 100%), linear-gradient(270deg, var(--color-gradient-start, #14283C) 0%, rgba(20, 40, 60, 0) 100%)',
       },
       boxShadow: {
         tooltip: '0 4px 10px rgba(0, 0, 0, 0.1)',

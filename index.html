@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./input.css" />
 </head>
 
-<body>
+<body class="">
     <!-- desktop sidebar -->
     <div
         class="group sidebar transition-all duration-300 ease-in-out hover:w-[323px] w-[113px] h-screen overflow-hidden fixed top-0 z-10 max-lg:hidden">
@@ -693,7 +693,7 @@
                     FAST</h2>
             </div>
         </div>
-        <div class="card-slider-section relative fix-left">
+        <div class="card-slider-section relative z-0 fix-left">
             <div class="container">
                 <div class="swiper card-slider overflow-visible">
                     <div class="swiper-wrapper">
@@ -1266,7 +1266,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="max-md:hidden swiper-button-next h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-to-r from-midnightBlue/0 to-midnightBlue after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-0 disabled:opacity-0  transition-all duration-300 ease-linear flex items-center z-10">
+                <div class="max-md:hidden swiper-button-next h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-slider-arrow after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-0 transition-all duration-300 ease-linear flex items-center z-10">
                     <span class="w-[15px]">
                         <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1275,8 +1275,8 @@
                         </svg>
                     </span>
                 </div>
-                <div class="max-md:hidden swiper-button-prev h-full w-[165px] m-0 after:w-[20px] absolute top-0 left-[113px] bg-gradient-to-r from-midnightBlue to-midnightBlue/0 justify-start pl-[30px] group-hover:!opacity-100 !opacity-0 transition-all duration-300 ease-linear flex items-center z-10">
-                    <span class="w-[15px] rotate-180">
+                <div class="max-md:hidden swiper-button-prev h-full w-[165px] m-0 after:w-[20px] absolute top-0 left-[113px] bg-gradient-slider-arrow justify-end pl-[30px] group-hover:!opacity-100 !opacity-0 transition-all duration-300 ease-linear flex items-center z-10 rotate-180">
+                    <span class="w-[15px]">
                         <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.874674 25.9059L12.2805 14.5L0.874674 3.09414C0.538174 2.75353 0.350117 2.29361 0.351571 1.81481C0.353024 1.33601 0.54387 0.877243 0.882432 0.538681C1.22099 0.20012 1.67976 0.00927427 2.15856 0.00782086C2.63736 0.00636745 3.09728 0.194424 3.43789 0.530924L16.1254 13.2184C16.4653 13.5583 16.6562 14.0193 16.6562 14.5C16.6562 14.9807 16.4653 15.4417 16.1254 15.7816L3.43789 28.4691C3.09728 28.8056 2.63736 28.9937 2.15856 28.9922C1.67976 28.9908 1.22099 28.7999 0.882432 28.4614C0.54387 28.1228 0.353024 27.6641 0.351571 27.1853C0.350117 26.7065 0.538174 26.2465 0.874674 25.9059Z"
@@ -1299,7 +1299,7 @@
                     Mastery</h2>
             </div>
         </div>
-        <div class="card-slider-section relative fix-left">
+        <div class="card-slider-section relative z-0 fix-left">
             <div class="container">
                 <div class="swiper card-slider2 overflow-visible">
                     <div class="swiper-wrapper">
@@ -1875,7 +1875,7 @@
 
             </div>
             <div
-                class="max-md:hidden swiper-button-next2 h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-to-r from-midnightBlue/0 to-midnightBlue after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
+                class="max-md:hidden swiper-button-next2 h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-slider-arrow after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
                 <span class="w-[15px]">
                     <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -1885,8 +1885,8 @@
                 </span>
             </div>
             <div
-                class="max-md:hidden swiper-button-prev2 h-full w-[165px] m-0 after:w-[20px] absolute top-0 left-[113px] bg-gradient-to-r from-midnightBlue to-midnightBlue/0 justify-start pl-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
-                <span class="w-[15px] rotate-180">
+                class="max-md:hidden rotate-180 swiper-button-prev2 h-full w-[165px] m-0 after:w-[20px] absolute top-0 left-[113px] bg-gradient-slider-arrow justify-end pl-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
+                <span class="w-[15px]">
                     <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.874674 25.9059L12.2805 14.5L0.874674 3.09414C0.538174 2.75353 0.350117 2.29361 0.351571 1.81481C0.353024 1.33601 0.54387 0.877243 0.882432 0.538681C1.22099 0.20012 1.67976 0.00927427 2.15856 0.00782086C2.63736 0.00636745 3.09728 0.194424 3.43789 0.530924L16.1254 13.2184C16.4653 13.5583 16.6562 14.0193 16.6562 14.5C16.6562 14.9807 16.4653 15.4417 16.1254 15.7816L3.43789 28.4691C3.09728 28.8056 2.63736 28.9937 2.15856 28.9922C1.67976 28.9908 1.22099 28.7999 0.882432 28.4614C0.54387 28.1228 0.353024 27.6641 0.351571 27.1853C0.350117 26.7065 0.538174 26.2465 0.874674 25.9059Z"
@@ -1907,7 +1907,7 @@
                 </h2>
             </div>
         </div>
-        <div class="card-slider-section relative fix-left">
+        <div class="card-slider-section relative z-0 fix-left">
             <div class="container">
                 <div class="swiper card-slider3 overflow-visible">
                     <div class="swiper-wrapper">
@@ -2481,7 +2481,7 @@
                     </div>
                 </div>
                 <div
-                    class="max-md:hidden swiper-button-next3 h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-to-r from-midnightBlue/0 to-midnightBlue after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-100 transition-opacity duration-300 ease-linear flex items-center z-10">
+                    class="max-md:hidden swiper-button-next3 h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-slider-arrow after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
                     <span class="w-[15px]">
                         <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -2491,8 +2491,8 @@
                     </span>
                 </div>
                 <div
-                    class="max-md:hidden swiper-button-prev3 h-full w-[165px] m-0 absolute after:w-[20px] top-0 left-[113px] bg-gradient-to-r from-midnightBlue to-midnightBlue/0 justify-start pl-[30px] group-hover:opacity-100 opacity-100 transition-opacity duration-300 ease-linear flex items-center z-10">
-                    <span class="w-[15px] rotate-180">
+                    class="max-md:hidden rotate-180 swiper-button-prev3 h-full w-[165px] m-0 absolute after:w-[20px] top-0 left-[113px] bg-gradient-slider-arrow justify-end pl-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
+                    <span class="w-[15px] ">
                         <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.874674 25.9059L12.2805 14.5L0.874674 3.09414C0.538174 2.75353 0.350117 2.29361 0.351571 1.81481C0.353024 1.33601 0.54387 0.877243 0.882432 0.538681C1.22099 0.20012 1.67976 0.00927427 2.15856 0.00782086C2.63736 0.00636745 3.09728 0.194424 3.43789 0.530924L16.1254 13.2184C16.4653 13.5583 16.6562 14.0193 16.6562 14.5C16.6562 14.9807 16.4653 15.4417 16.1254 15.7816L3.43789 28.4691C3.09728 28.8056 2.63736 28.9937 2.15856 28.9922C1.67976 28.9908 1.22099 28.7999 0.882432 28.4614C0.54387 28.1228 0.353024 27.6641 0.351571 27.1853C0.350117 26.7065 0.538174 26.2465 0.874674 25.9059Z"
@@ -2514,7 +2514,7 @@
                 </h2>
             </div>
         </div>
-        <div class="card-slider-section relative fix-left">
+        <div class="card-slider-section relative z-0 fix-left">
             <div class="container">
                 <div class="swiper card-slider4 overflow-visible">
                     <div class="swiper-wrapper">
@@ -3088,7 +3088,7 @@
                     </div>
                 </div>
                 <div
-                    class="max-md:hidden swiper-button-next4 h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-to-r from-midnightBlue/0 to-midnightBlue after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-100 transition-opacity duration-300 ease-linear flex items-center z-10">
+                    class="max-md:hidden swiper-button-next4 h-full w-[165px] m-0 absolute top-0 -right-full group-hover:right-0 bg-gradient-slider-arrow after:hidden justify-end pr-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
                     <span class="w-[15px]">
                         <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -3098,8 +3098,8 @@
                     </span>
                 </div>
                 <div
-                    class="max-md:hidden swiper-button-prev4 h-full w-[165px] m-0 absolute after:w-[20px] top-0 left-[113px] bg-gradient-to-r from-midnightBlue to-midnightBlue/0 justify-start pl-[30px] group-hover:opacity-100 opacity-100 transition-opacity duration-300 ease-linear flex items-center z-10">
-                    <span class="w-[15px] rotate-180">
+                    class="max-md:hidden rotate-180 swiper-button-prev4 h-full w-[165px] m-0 absolute after:w-[20px] top-0 left-[113px] bg-gradient-slider-arrow justify-end pl-[30px] group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-linear flex items-center z-10">
+                    <span class="w-[15px]">
                         <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.874674 25.9059L12.2805 14.5L0.874674 3.09414C0.538174 2.75353 0.350117 2.29361 0.351571 1.81481C0.353024 1.33601 0.54387 0.877243 0.882432 0.538681C1.22099 0.20012 1.67976 0.00927427 2.15856 0.00782086C2.63736 0.00636745 3.09728 0.194424 3.43789 0.530924L16.1254 13.2184C16.4653 13.5583 16.6562 14.0193 16.6562 14.5C16.6562 14.9807 16.4653 15.4417 16.1254 15.7816L3.43789 28.4691C3.09728 28.8056 2.63736 28.9937 2.15856 28.9922C1.67976 28.9908 1.22099 28.7999 0.882432 28.4614C0.54387 28.1228 0.353024 27.6641 0.351571 27.1853C0.350117 26.7065 0.538174 26.2465 0.874674 25.9059Z"
