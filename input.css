@@ -1,89 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #D5A342;
+  --color-midnightBlue: #14283C;
+  --color-gray: #aaaaaa;
+  --color-sunglow: #FFB743;
+  --color-gradient-start: #14283C;
+}
+
+/* Define a custom theme color palette using CSS variables, and apply it dynamically by toggling classes on the <body> element. */
+.theme-red {
+  --color-midnightBlue: #7f1d1d;  
+  --color-gradient-start: #7f1d1d;
+}
+
+.theme-blue {
+  --color-midnightBlue: #102a43;  
+  --color-gradient-start: #0e355e;   
+}
+
 body {
-    @apply bg-secondary;
+  @apply bg-midnightBlue;
 }
 
 .sidebar-scroll {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .sidebar-scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .hero-slider .swiper-pagination {
-    display: inline-flex;
-    flex-direction: column;
-    gap: 20px;
-    right: 120px !important;
-    top: 50% !important;
-    width: min-content;
-    height: fit-content;
-    left: unset;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  right: 120px !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+  width: min-content;
+  height: fit-content;
+  left: unset;
 }
 
 .swiper-pagination-bullet {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    opacity: 0.4;
-    border-radius: 50%;
-    margin: 8px 0;
-    cursor: pointer;
-    transition: opacity 0.3s;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 50%;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  z-index: 1;
 }
 
 .swiper-pagination-bullet-active {
-    opacity: 1;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet:hover {
+  opacity: 1;
 }
 
 .swiper-pagination-bullet::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    right: 21px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    color: #14283C;
-    padding: 6px 12px;
-    font-size: 14px;
-    border-radius: 6px;
-    white-space: nowrap;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    opacity: 0;
+  @apply max-w-[320px] w-max absolute right-[21px] top-1/2 -translate-y-1/2 bg-white text-midnightBlue font-playfair-display font-extrabold text-xl text-left rounded-xl py-[15px] px-[20px] z-10 opacity-0 pointer-events-none transition-opacity duration-300 ease-linear shadow-tooltip;
+  content: attr(data-tooltip);
 }
 
 .swiper-pagination-bullet::before {
-    content: "";
-    position: absolute;
-    right: 9px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 6px solid transparent;
-    border-left-color: white;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-.swiper-pagination-bullet-active::after,
-.swiper-pagination-bullet-active::before {
-    opacity: 1;
+.swiper-pagination-bullet:hover::after,
+.swiper-pagination-bullet:hover::before {
+  opacity: 1;
 }
 
 /* category */
 .category-scroll {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
 }
 
 .category-scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .grab-scroll {
@@ -96,8 +115,23 @@ body {
 }
 
 /* card-slider */
-.card-slider .swiper-button-disabled{
-    visibility: hidden;
+.fast-slider .swiper-button-disabled {
+  visibility: hidden;
+}
+
+/* short-game-mastery-section */
+.short-game-mastery-section .swiper-button-disabled {
+  visibility: hidden;
+}
+
+/* swing-mechanics-section */
+.swing-mechanics-section .swiper-button-disabled {
+  visibility: hidden;
+}
+
+/* legends-of-golf-section */
+.legends-of-golf-section .swiper-button-disabled {
+  visibility: hidden;
 }
 
 /* date-custom-icon */
@@ -105,17 +139,219 @@ input[type="date"]::-webkit-inner-spin-button {
   opacity: 0;
 }
 
+.form-control input {
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
-  /* background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png)
-    center/80% no-repeat; */
-     background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuOTM2ODUgMS45NzkxN0M1LjkzNjg1IDEuNTQxOTQgNS41ODI0MSAxLjE4NzUgNS4xNDUxOCAxLjE4NzVDNC43MDc5NiAxLjE4NzUgNC4zNTM1MiAxLjU0MTk0IDQuMzUzNTIgMS45NzkxN1YyLjc3MDgzQzQuMzUzNTIgMy4yMDgwNiA0LjcwNzk2IDMuNTYyNSA1LjE0NTE4IDMuNTYyNUM1LjU4MjQxIDMuNTYyNSA1LjkzNjg1IDMuMjA4MDYgNS45MzY4NSAyLjc3MDgzVjEuOTc5MTdaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjMiLz4KPHBhdGggZD0iTTE0LjY0NTggMS45NzkxN0MxNC42NDU4IDEuNTQxOTQgMTQuMjkxNCAxLjE4NzUgMTMuODU0MiAxLjE4NzVDMTMuNDE2OSAxLjE4NzUgMTMuMDYyNSAxLjU0MTk0IDEzLjA2MjUgMS45NzkxN1YyLjc3MDgzQzEzLjA2MjUgMy4yMDgwNiAxMy40MTY5IDMuNTYyNSAxMy44NTQyIDMuNTYyNUMxNC4yOTE0IDMuNTYyNSAxNC42NDU4IDMuMjA4MDYgMTQuNjQ1OCAyLjc3MDgzVjEuOTc5MTdaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjMiLz4KPHBhdGggZD0iTTEuNTgzMDEgNy4xMjVWMTYuMjI5MkMxLjU4MzAxIDE2LjY0OTEgMS43NDk4MiAxNy4wNTE4IDIuMDQ2NzYgMTcuMzQ4OEMyLjM0MzY5IDE3LjY0NTcgMi43NDY0MiAxNy44MTI1IDMuMTY2MzQgMTcuODEyNUgxNS44MzNDMTYuMjUyOSAxNy44MTI1IDE2LjY1NTcgMTcuNjQ1NyAxNi45NTI2IDE3LjM0ODhDMTcuMjQ5NSAxNy4wNTE4IDE3LjQxNjMgMTYuNjQ5MSAxNy40MTYzIDE2LjIyOTJWNy4xMjVIMS41ODMwMVpNNi4zMzMwMSAxNS4wNDE3QzYuMzMzMDEgMTUuMjUxNiA2LjI0OTYgMTUuNDUzIDYuMTAxMTMgMTUuNjAxNUM1Ljk1MjY3IDE1Ljc0OTkgNS43NTEzIDE1LjgzMzMgNS41NDEzNCAxNS44MzMzSDQuNzQ5NjdDNC41Mzk3MSAxNS44MzMzIDQuMzM4MzUgMTUuNzQ5OSA0LjE4OTg4IDE1LjYwMTVDNC4wNDE0MiAxNS40NTMgMy45NTgwMSAxNS4yNTE2IDMuOTU4MDEgMTUuMDQxN1YxNC4yNUMzLjk1ODAxIDE0LjA0IDQuMDQxNDIgMTMuODM4NyA0LjE4OTg4IDEzLjY5MDJDNC4zMzgzNSAxMy41NDE3IDQuNTM5NzEgMTMuNDU4MyA0Ljc0OTY3IDEzLjQ1ODNINS41NDEzNEM1Ljc1MTMgMTMuNDU4MyA1Ljk1MjY3IDEzLjU0MTcgNi4xMDExMyAxMy42OTAyQzYuMjQ5NiAxMy44Mzg3IDYuMzMzMDEgMTQuMDQgNi4zMzMwMSAxNC4yNVYxNS4wNDE3Wk02LjMzMzAxIDEwLjY4NzVDNi4zMzMwMSAxMC44OTc1IDYuMjQ5NiAxMS4wOTg4IDYuMTAxMTMgMTEuMjQ3M0M1Ljk1MjY3IDExLjM5NTggNS43NTEzIDExLjQ3OTIgNS41NDEzNCAxMS40NzkySDQuNzQ5NjdDNC41Mzk3MSAxMS40NzkyIDQuMzM4MzUgMTEuMzk1OCA0LjE4OTg4IDExLjI0NzNDNC4wNDE0MiAxMS4wOTg4IDMuOTU4MDEgMTAuODk3NSAzLjk1ODAxIDEwLjY4NzVWOS44OTU4M0MzLjk1ODAxIDkuNjg1ODcgNC4wNDE0MiA5LjQ4NDUxIDQuMTg5ODggOS4zMzYwNEM0LjMzODM1IDkuMTg3NTcgNC41Mzk3MSA5LjEwNDE3IDQuNzQ5NjcgOS4xMDQxN0g1LjU0MTM0QzUuNzUxMyA5LjEwNDE3IDUuOTUyNjcgOS4xODc1NyA2LjEwMTEzIDkuMzM2MDRDNi4yNDk2IDkuNDg0NTEgNi4zMzMwMSA5LjY4NTg3IDYuMzMzMDEgOS44OTU4M1YxMC42ODc1Wk0xMC42ODcyIDE1LjA0MTdDMTAuNjg3MiAxNS4yNTE2IDEwLjYwMzggMTUuNDUzIDEwLjQ1NTMgMTUuNjAxNUMxMC4zMDY4IDE1Ljc0OTkgMTAuMTA1NSAxNS44MzMzIDkuODk1NTEgMTUuODMzM0g5LjEwMzg0QzguODkzODggMTUuODMzMyA4LjY5MjUxIDE1Ljc0OTkgOC41NDQwNSAxNS42MDE1QzguMzk1NTggMTUuNDUzIDguMzEyMTcgMTUuMjUxNiA4LjMxMjE3IDE1LjA0MTdWMTQuMjVDOC4zMTIxNyAxNC4wNCA4LjM5NTU4IDEzLjgzODcgOC41NDQwNSAxMy42OTAyQzguNjkyNTEgMTMuNTQxNyA4Ljg5Mzg4IDEzLjQ1ODMgOS4xMDM4NCAxMy40NTgzSDkuODk1NTFDMTAuMTA1NSAxMy40NTgzIDEwLjMwNjggMTMuNTQxNyAxMC40NTUzIDEzLjY5MDJDMTAuNjAzOCAxMy44Mzg3IDEwLjY4NzIgMTQuMDQgMTAuNjg3MiAxNC4yNVYxNS4wNDE3Wk0xMC42ODcyIDEwLjY4NzVDMTAuNjg3MiAxMC44OTc1IDEwLjYwMzggMTEuMDk4OCAxMC40NTUzIDExLjI0NzNDMTAuMzA2OCAxMS4zOTU4IDEwLjEwNTUgMTEuNDc5MiA5Ljg5NTUxIDExLjQ3OTJIOS4xMDM4NEM4Ljg5Mzg4IDExLjQ3OTIgOC42OTI1MSAxMS4zOTU4IDguNTQ0MDUgMTEuMjQ3M0M4LjM5NTU4IDExLjA5ODggOC4zMTIxNyAxMC44OTc1IDguMzEyMTcgMTAuNjg3NVY5Ljg5NTgzQzguMzEyMTcgOS42ODU4NyA4LjM5NTU4IDkuNDg0NTEgOC41NDQwNSA5LjMzNjA0QzguNjkyNTEgOS4xODc1NyA4Ljg5Mzg4IDkuMTA0MTcgOS4xMDM4NCA5LjEwNDE3SDkuODk1NTFDMTAuMTA1NSA5LjEwNDE3IDEwLjMwNjggOS4xODc1NyAxMC40NTUzIDkuMzM2MDRDMTAuNjAzOCA5LjQ4NDUxIDEwLjY4NzIgOS42ODU4NyAxMC42ODcyIDkuODk1ODNWMTAuNjg3NVpNMTUuMDQxMyAxNS4wNDE3QzE1LjA0MTMgMTUuMjUxNiAxNC45NTc5IDE1LjQ1MyAxNC44MDk1IDE1LjYwMTVDMTQuNjYxIDE1Ljc0OTkgMTQuNDU5NiAxNS44MzMzIDE0LjI0OTcgMTUuODMzM0gxMy40NThDMTMuMjQ4IDE1LjgzMzMgMTMuMDQ2NyAxNS43NDk5IDEyLjg5ODIgMTUuNjAxNUMxMi43NDk3IDE1LjQ1MyAxMi42NjYzIDE1LjI1MTYgMTIuNjY2MyAxNS4wNDE3VjE0LjI1QzEyLjY2NjMgMTQuMDQgMTIuNzQ5NyAxMy44Mzg3IDEyLjg5ODIgMTMuNjkwMkMxMy4wNDY3IDEzLjU0MTcgMTMuMjQ4IDEzLjQ1ODMgMTMuNDU4IDEzLjQ1ODNIMTQuMjQ5N0MxNC40NTk2IDEzLjQ1ODMgMTQuNjYxIDEzLjU0MTcgMTQuODA5NSAxMy42OTAyQzE0Ljk1NzkgMTMuODM4NyAxNS4wNDEzIDE0LjA0IDE1LjA0MTMgMTQuMjVWMTUuMDQxN1pNMTUuMDQxMyAxMC42ODc1QzE1LjA0MTMgMTAuODk3NSAxNC45NTc5IDExLjA5ODggMTQuODA5NSAxMS4yNDczQzE0LjY2MSAxMS4zOTU4IDE0LjQ1OTYgMTEuNDc5MiAxNC4yNDk3IDExLjQ3OTJIMTMuNDU4QzEzLjI0OCAxMS40NzkyIDEzLjA0NjcgMTEuMzk1OCAxMi44OTgyIDExLjI0NzNDMTIuNzQ5NyAxMS4wOTg4IDEyLjY2NjMgMTAuODk3NSAxMi42NjYzIDEwLjY4NzVWOS44OTU4M0MxMi42NjYzIDkuNjg1ODcgMTIuNzQ5NyA5LjQ4NDUxIDEyLjg5ODIgOS4zMzYwNEMxMy4wNDY3IDkuMTg3NTcgMTMuMjQ4IDkuMTA0MTcgMTMuNDU4IDkuMTA0MTdIMTQuMjQ5N0MxNC40NTk2IDkuMTA0MTcgMTQuNjYxIDkuMTg3NTcgMTQuODA5NSA5LjMzNjA0QzE0Ljk1NzkgOS40ODQ1MSAxNS4wNDEzIDkuNjg1ODcgMTUuMDQxMyA5Ljg5NTgzVjEwLjY4NzVaTTE3LjQxNjMgNi4zMzMzM1YzLjk1ODMzQzE3LjQxNjMgMy41Mzg0MSAxNy4yNDk1IDMuMTM1NjggMTYuOTUyNiAyLjgzODc1QzE2LjY1NTcgMi41NDE4MSAxNi4yNTI5IDIuMzc1IDE1LjgzMyAyLjM3NUgxNS40MzcyVjIuNzcwODNDMTUuNDM3MiAzLjY0NDA0IDE0LjcyNyA0LjM1NDE3IDEzLjg1MzggNC4zNTQxN0MxMi45ODA2IDQuMzU0MTcgMTIuMjcwNSAzLjY0NDA0IDEyLjI3MDUgMi43NzA4M1YyLjM3NUg2LjcyODg0VjIuNzcwODNDNi43Mjg4NCAzLjY0NDA0IDYuMDE4NzIgNC4zNTQxNyA1LjE0NTUxIDQuMzU0MTdDNC4yNzIzIDQuMzU0MTcgMy41NjIxNyAzLjY0NDA0IDMuNTYyMTcgMi43NzA4M1YyLjM3NUgzLjE2NjM0QzIuNzQ2NDIgMi4zNzUgMi4zNDM2OSAyLjU0MTgxIDIuMDQ2NzYgMi44Mzg3NUMxLjc0OTgyIDMuMTM1NjggMS41ODMwMSAzLjUzODQxIDEuNTgzMDEgMy45NTgzM1Y2LjMzMzMzSDE3LjQxNjNaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjMiLz4KPC9zdmc+Cg==") center/80% no-repeat;
-     cursor: pointer;
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
 
-.opacity-none{
+input[type="date"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  color-scheme: dark;
+}
+
+@-moz-document url-prefix() {
+  input[type="date"] {
+    color: transparent;
+    text-shadow: 0 0 0 #fff;
+  }
+}
+
+/* The container */
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox input {
+  position: absolute;
   opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-.opacity-full{
-  opacity: 1;
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  border-radius: 5px;
+  background-color: #FFFFFF33;
+}
+
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox:hover input~.checkmark {
+  background-color: #FFFFFF;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox input:checked~.checkmark {
+  background-color: #D5A342;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* special class for responsive */
+.fix-left {
+  padding-left: 113px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .fix-left {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width:2000px) {
+  .container {
+    max-width: 2800px !important;
+    width: 100% !important;
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+  }
+
+  .watch_hero_title {
+    font-size: 44px;
+  }
+
+  .card_title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width:993px) and (max-width:1556px) {
+  .padding_top {
+    padding-top: 240px;
+  }
+
+  .play-icon {
+    margin-bottom: 0px;
+  }
+
+  .play-icon svg {
+    height: 115px;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .hero_title {
+    max-width: 700px;
+    font-size: 40px;
+  }
+
+  .hero_desc {
+    max-width: 700px;
+    font-size: 18px;
+  }
+
+  .hero_date {
+    font-size: 17px;
+  }
+
+  .card_section_title {
+    font-size: 35px;
+  }
+
+  .card_title {
+    font-size: 19px;
+  }
+
+  .watch_hero_title {
+    font-size: 32px;
+    max-width: 850px;
+  }
+
+  .watch_hero_desc {
+    max-width: 850px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width:993px) and (max-width:1792px) {
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .hero-video-section {
+    padding-top: 125px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .card_title {
+    font-size: 16px !important;
+  }
 }
