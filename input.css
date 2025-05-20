@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -152,14 +154,12 @@ input[type="date"] {
   position: relative;
   z-index: 1;
   color-scheme: dark;
-  /* Optional */
 }
 
 @-moz-document url-prefix() {
   input[type="date"] {
     color: transparent;
     text-shadow: 0 0 0 #fff;
-    /* Or your text color */
   }
 }
 
@@ -281,6 +281,9 @@ input[type="date"] {
   }
   .card_section_title{
     font-size: 35px;
+  }
+   .card_title{
+    font-size: 19px;
   }
 }
 

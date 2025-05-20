@@ -22,7 +22,7 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      320: {
+     320: {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
@@ -30,12 +30,22 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      992: {
+       992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+       1280: {
         slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1444: {
+        slidesPerView: 3.4,
         spaceBetween: 30,
       },
     },
   });
+
+
   // Card Slider2
   var swiper2 = new Swiper(".card-slider2", {
     slidesPerView: 3.4,
@@ -45,7 +55,7 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev2",
     },
     breakpoints: {
-      320: {
+     320: {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
@@ -53,8 +63,16 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      992: {
+       992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+       1280: {
         slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1444: {
+        slidesPerView: 3.4,
         spaceBetween: 30,
       },
     },
@@ -76,8 +94,16 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      992: {
+       992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+       1280: {
         slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1444: {
+        slidesPerView: 3.4,
         spaceBetween: 30,
       },
     },
@@ -99,8 +125,16 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      992: {
+       992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+       1280: {
         slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1444: {
+        slidesPerView: 3.4,
         spaceBetween: 30,
       },
     },
