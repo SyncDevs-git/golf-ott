@@ -50,16 +50,8 @@ body {
 }
 
 .swiper-pagination-bullet::after {
+  @apply max-w-[320px] w-max absolute right-[21px] top-1/2 -translate-y-1/2 bg-white text-midnightBlue font-playfair-display font-extrabold text-xl text-left rounded-xl py-[15px] px-[20px] z-10 opacity-0 pointer-events-none transition-opacity duration-300 ease-linear shadow-[0_4px_10px_rgba(0,0,0,0.1)] ;
   content: attr(data-tooltip);
-  max-width: 420px;
-  width: max-content;
-  position: absolute;
-  right: 21px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: white;
-  color: #14283C;
-  @apply bg-white text-midnightBlue font-playfair-display font-extrabold text-xl text-left rounded-xl py-[15px] px-[20px] z-10 opacity-0 pointer-events-none transition-opacity duration-300 ease-linear shadow-[0_4px_10px_rgba(0,0,0,0.1)];
 }
 
 .swiper-pagination-bullet::before {
@@ -72,7 +64,7 @@ body {
   border-left-color: white;
   opacity: 0;
   pointer-events: none;
-    transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .swiper-pagination-bullet:hover::after,
@@ -105,14 +97,17 @@ body {
 .fast-slider .swiper-button-disabled {
   visibility: hidden;
 }
+
 /* short-game-mastery-section */
 .short-game-mastery-section .swiper-button-disabled {
   visibility: hidden;
 }
+
 /* swing-mechanics-section */
 .swing-mechanics-section .swiper-button-disabled {
   visibility: hidden;
 }
+
 /* legends-of-golf-section */
 .legends-of-golf-section .swiper-button-disabled {
   visibility: hidden;
@@ -122,25 +117,27 @@ body {
 input[type="date"]::-webkit-inner-spin-button {
   opacity: 0;
 }
+
 .form-control input {
-    border: none;
-    box-sizing: border-box;
-    outline: 0;
-    position: relative;
-    width: 100%;
-     cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
 }
+
 input[type="date"]::-webkit-calendar-picker-indicator {
-    background: red;
-    bottom: 0;
-    color: transparent;
-    cursor: pointer;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 
 input[type="date"]::-webkit-inner-spin-button,
@@ -154,14 +151,18 @@ input[type="date"] {
   appearance: none;
   position: relative;
   z-index: 1;
-  color-scheme: dark; /* Optional */
+  color-scheme: dark;
+  /* Optional */
 }
+
 @-moz-document url-prefix() {
   input[type="date"] {
     color: transparent;
-    text-shadow: 0 0 0 #fff; /* Or your text color */
+    text-shadow: 0 0 0 #fff;
+    /* Or your text color */
   }
 }
+
 /* The container */
 .custom-checkbox {
   display: block;
@@ -196,12 +197,12 @@ input[type="date"] {
 
 
 /* On mouse-over, add a grey background color */
-.custom-checkbox:hover input ~ .checkmark {
+.custom-checkbox:hover input~.checkmark {
   background-color: #FFFFFF;
 }
 
 /* When the checkbox is checked, add a blue background */
-.custom-checkbox input:checked ~ .checkmark {
+.custom-checkbox input:checked~.checkmark {
   background-color: #D5A342;
 }
 
@@ -213,19 +214,34 @@ input[type="date"] {
 }
 
 /* Show the checkmark when checked */
-.custom-checkbox input:checked ~ .checkmark:after {
+.custom-checkbox input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
 .custom-checkbox .checkmark:after {
   left: 7px;
-    top: 2px;
-    width: 8px;
-    height: 14px;
+  top: 2px;
+  width: 8px;
+  height: 14px;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* special class for responsive */
+.fix-left {
+  padding-left: 113px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .fix-left {
+    padding-left: 0;
+  }
+}
+@media (max-width: 1792px) {
+ 
 }
