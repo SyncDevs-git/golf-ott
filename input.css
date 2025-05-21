@@ -15,13 +15,13 @@
 
 /* Define a custom theme color palette using CSS variables, and apply it dynamically by toggling classes on the <body> element. */
 .theme-red {
-  --color-midnightBlue: #7f1d1d;  
+  --color-midnightBlue: #7f1d1d;
   --color-gradient-start: #7f1d1d;
 }
 
 .theme-blue {
-  --color-midnightBlue: #102a43;  
-  --color-gradient-start: #0e355e;   
+  --color-midnightBlue: #102a43;
+  --color-gradient-start: #0e355e;
 }
 
 body {
@@ -348,6 +348,53 @@ input[type="date"] {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+@media (min-width:500px) and (max-width:991px) {
+  /* .padding_top{
+    padding-top: 169px;
+  }
+  .swiper-pagination {
+    display: none !important;
+  }
+    .play-icon {
+    margin-bottom: 0px;
+  }
+   .play-icon svg {
+    height: 80px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .hero_title{
+    font-size: 31px !important;
+  }
+  .hero_desc{
+    font-size: 16px !important;
+    margin-bottom: 30px;
+  }
+  .hero_date{
+    font-size: 14px;
+  }
+  .card_section_title {
+    font-size: 35px;
+  }
+  .card_title {
+    font-size: 19px;
+  }
+
+  .watch_hero_title {
+    font-size: 32px;
+    max-width: 850px;
+  }
+
+  .watch_hero_desc {
+    max-width: 850px;
+    font-size: 18px;
+  }
+  .settings {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  } */
 }
 
 @media screen and (max-width:768px) {
