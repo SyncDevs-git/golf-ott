@@ -348,9 +348,23 @@ input[type="date"] {
     padding-left: 20px;
     padding-right: 20px;
   }
+  #sidebar ul li a{
+  opacity: 1;
+}
 }
 
 @media (min-width:500px) and (max-width:991px) {
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-button-next2,
+.swiper-button-prev2,
+.swiper-button-next3,
+.swiper-button-prev3,
+.swiper-button-next4,
+.swiper-button-prev4{
+  display: none;
+}
+
   /* .padding_top{
     padding-top: 169px;
   }
