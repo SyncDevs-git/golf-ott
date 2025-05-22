@@ -348,67 +348,29 @@ input[type="date"] {
     padding-left: 20px;
     padding-right: 20px;
   }
-  #sidebar ul li a{
-  opacity: 1;
-}
+
+  #sidebar ul li a {
+    opacity: 1;
+  }
+
+  #sidebar {
+    background: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(16.50px)
+  }
 }
 
 @media (min-width:500px) and (max-width:991px) {
+
   .swiper-button-next,
   .swiper-button-prev,
   .swiper-button-next2,
-.swiper-button-prev2,
-.swiper-button-next3,
-.swiper-button-prev3,
-.swiper-button-next4,
-.swiper-button-prev4{
-  display: none;
-}
-
-  /* .padding_top{
-    padding-top: 169px;
+  .swiper-button-prev2,
+  .swiper-button-next3,
+  .swiper-button-prev3,
+  .swiper-button-next4,
+  .swiper-button-prev4 {
+    display: none;
   }
-  .swiper-pagination {
-    display: none !important;
-  }
-    .play-icon {
-    margin-bottom: 0px;
-  }
-   .play-icon svg {
-    height: 80px;
-    width: auto;
-    margin-bottom: 20px;
-  }
-  .hero_title{
-    font-size: 31px !important;
-  }
-  .hero_desc{
-    font-size: 16px !important;
-    margin-bottom: 30px;
-  }
-  .hero_date{
-    font-size: 14px;
-  }
-  .card_section_title {
-    font-size: 35px;
-  }
-  .card_title {
-    font-size: 19px;
-  }
-
-  .watch_hero_title {
-    font-size: 32px;
-    max-width: 850px;
-  }
-
-  .watch_hero_desc {
-    max-width: 850px;
-    font-size: 18px;
-  }
-  .settings {
-    padding-top: 120px;
-    padding-bottom: 50px;
-  } */
 }
 
 @media screen and (max-width:768px) {
