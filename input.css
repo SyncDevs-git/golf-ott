@@ -15,13 +15,13 @@
 
 /* Define a custom theme color palette using CSS variables, and apply it dynamically by toggling classes on the <body> element. */
 .theme-red {
-  --color-midnightBlue: #7f1d1d;  
+  --color-midnightBlue: #7f1d1d;
   --color-gradient-start: #7f1d1d;
 }
 
 .theme-blue {
-  --color-midnightBlue: #102a43;  
-  --color-gradient-start: #0e355e;   
+  --color-midnightBlue: #102a43;
+  --color-gradient-start: #0e355e;
 }
 
 body {
@@ -347,6 +347,29 @@ input[type="date"] {
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  #sidebar ul li a {
+    opacity: 1;
+  }
+
+  #sidebar {
+    background: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(16.50px)
+  }
+}
+
+@media (min-width:500px) and (max-width:991px) {
+
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-button-next2,
+  .swiper-button-prev2,
+  .swiper-button-next3,
+  .swiper-button-prev3,
+  .swiper-button-next4,
+  .swiper-button-prev4 {
+    display: none;
   }
 }
 

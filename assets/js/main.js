@@ -26,11 +26,11 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      600: {
-        slidesPerView: 1.2,
+      500: {
+        slidesPerView: 1.7,
         spaceBetween: 17,
       },
-       992: {
+       993: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
@@ -67,11 +67,11 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      600: {
-        slidesPerView: 1.2,
+     500: {
+        slidesPerView: 1.7,
         spaceBetween: 17,
       },
-       992: {
+       993: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
@@ -106,11 +106,11 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      600: {
-        slidesPerView: 1.2,
+     500: {
+        slidesPerView: 1.7,
         spaceBetween: 17,
       },
-       992: {
+       993: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
@@ -145,11 +145,11 @@ $(document).ready(function () {
         slidesPerView: 1.2,
         spaceBetween: 17,
       },
-      600: {
-        slidesPerView: 1.2,
+      500: {
+        slidesPerView: 1.7,
         spaceBetween: 17,
       },
-       992: {
+       993: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
